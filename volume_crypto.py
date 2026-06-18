@@ -1,167 +1,80 @@
 #!/usr/bin/env python3
 
 import argparse
+import ctypes
 import os
-import platform
-import secrets
 import subprocess
 import sys
 
+KEY = r"Q|&-aVITR856TX>,'^\7~kQ0j\_7Dp~6doMN5hQ:u084Y>"
 KEY_FILE = "key.bin"
-KEY_SIZE = 32
 
 
 class VolumeCryptoError(Exception):
     pass
 
 
-def generate_key() -> bytes:
-    return secrets.token_bytes(KEY_SIZE)
+def is_admin() -> bool:
+    try:
+        return bool(ctypes.windll.shell32.IsUserAnAdmin())
+    except (AttributeError, OSError):
+        return False
 
 
-def save_key(key: bytes, path: str) -> None:
-    with open(path, "wb") as handle:
-        handle.write(key)
+def require_windows() -> None:
+    if os.name != "nt":
+        raise VolumeCryptoError("this utility requires Windows")
 
 
-def load_key(path: str) -> bytes:
-    with open(path, "rb") as handle:
-        return handle.read()
+def normalize_drive(drive: str) -> str:
+    value = drive.strip().upper()
+    if len(value) == 1 and value.isalpha():
+        return f"{value}:"
+    if len(value) == 2 and value[0].isalpha() and value.endswith(":"):
+        return value
+    raise VolumeCryptoError(f"invalid drive letter: {drive}")
 
 
-def run_command(command: list[str]) -> None:
-    result = subprocess.run(
-        command,
+def write_key(path: str) -> str:
+    absolute = os.path.abspath(path)
+    with open(absolute, "w", encoding="utf-8", newline="\n") as handle:
+        handle.write(KEY)
+    return absolute
+
+
+def resolve_key_path(path: str) -> str:
+    absolute = os.path.abspath(path)
+    if not os.path.isfile(absolute):
+        raise VolumeCryptoError(f"key file not found: {absolute}")
+    return absolute
+
+
+def run_manage_bde(arguments: list[str]) -> subprocess.CompletedProcess[str]:
+    return subprocess.run(
+        ["manage-bde", *arguments],
         capture_output=True,
         text=True,
         check=False,
     )
+
+
+def encrypt_drive(drive: str) -> int:
+    key_path = write_key(KEY_FILE)
+    result = run_manage_bde(["-on", drive, "-RecoveryKey", key_path])
     if result.returncode != 0:
-        detail = (result.stderr or result.stdout or "").strip()
-        raise VolumeCryptoError(detail or f"command failed: {' '.join(command)}")
-
-
-def mapper_name(target: str) -> str:
-    base = os.path.basename(target.rstrip(os.sep))
-    sanitized = "".join(ch if ch.isalnum() else "_" for ch in base)
-    return sanitized or "volume"
-
-
-def encrypt_linux(target: str, key_path: str) -> None:
-    run_command(
-        [
-            "cryptsetup",
-            "luksFormat",
-            "--batch-mode",
-            "--type",
-            "luks2",
-            "--key-file",
-            key_path,
-            "--key-size",
-            str(KEY_SIZE * 8),
-            target,
-        ]
-    )
-
-
-def decrypt_linux(target: str, key_path: str) -> None:
-    run_command(
-        [
-            "cryptsetup",
-            "open",
-            "--key-file",
-            key_path,
-            target,
-            mapper_name(target),
-        ]
-    )
-
-
-def encrypt_windows(target: str, key_path: str) -> None:
-    run_command(
-        [
-            "manage-bde",
-            "-on",
-            target,
-            "-used",
-        ]
-    )
-    run_command(
-        [
-            "manage-bde",
-            "-protectors",
-            "-add",
-            target,
-            "-ExternalKey",
-            key_path,
-        ]
-    )
-
-
-def decrypt_windows(target: str, key_path: str) -> None:
-    run_command(
-        [
-            "manage-bde",
-            "-unlock",
-            target,
-            "-ExternalKey",
-            key_path,
-        ]
-    )
-
-
-def encrypt_volume(target: str, key_path: str) -> None:
-    if platform.system() == "Windows":
-        encrypt_windows(target, key_path)
-    else:
-        encrypt_linux(target, key_path)
-
-
-def decrypt_volume(target: str, key_path: str) -> None:
-    if platform.system() == "Windows":
-        decrypt_windows(target, key_path)
-    else:
-        decrypt_linux(target, key_path)
-
-
-def handle_encrypt(target: str) -> int:
-    key_path = os.path.abspath(KEY_FILE)
-    if os.path.exists(key_path):
-        print(f"error: {key_path} already exists", file=sys.stderr)
+        print('Error: Operation failed. Please contact system administrator.')
         return 1
-
-    key = generate_key()
-    save_key(key, key_path)
-
-    try:
-        encrypt_volume(target, key_path)
-    except VolumeCryptoError as exc:
-        print(f"error: {exc}", file=sys.stderr)
-        return 1
-    except OSError as exc:
-        print(f"error: {exc}", file=sys.stderr)
-        return 1
-
     print("success: volume encrypted")
     print(f"key: {key_path}")
     return 0
 
 
-def handle_decrypt(target: str, key_path: str) -> int:
-    resolved_key = os.path.abspath(key_path)
-    if not os.path.isfile(resolved_key):
-        print(f"error: key file not found: {resolved_key}", file=sys.stderr)
-        return 1
-
-    try:
-        decrypt_volume(target, resolved_key)
-    except VolumeCryptoError as exc:
-        print(f"error: {exc}", file=sys.stderr)
-        return 1
-    except OSError as exc:
-        print(f"error: {exc}", file=sys.stderr)
-        return 1
-
+def decrypt_drive(drive: str, key_path: str) -> int:
+    resolved_key = resolve_key_path(key_path)
+    result = run_manage_bde(["-unlock", drive, "-RecoveryKey", resolved_key])
+    if result.returncode != 0:
+        detail = (result.stderr or result.stdout or "").strip()
+        raise VolumeCryptoError(detail or "decryption failed")
     print("success: volume decrypted")
     return 0
 
@@ -169,24 +82,40 @@ def handle_decrypt(target: str, key_path: str) -> int:
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(add_help=False)
     group = parser.add_mutually_exclusive_group(required=True)
-    group.add_argument("--encrypt", metavar="target")
-    group.add_argument("--decrypt", metavar="target")
-    parser.add_argument("--key", metavar="file")
+    group.add_argument("--encrypt", metavar="letra_unidad")
+    group.add_argument("--decrypt", metavar="letra_unidad")
+    parser.add_argument("--key", metavar="file", default=KEY_FILE)
     return parser
 
 
 def main(argv: list[str] | None = None) -> int:
+    if not is_admin():
+        print("error: administrator privileges required", file=sys.stderr)
+        return 1
+
+    try:
+        require_windows()
+    except VolumeCryptoError as exc:
+        print(f"error: {exc}", file=sys.stderr)
+        return 1
+
     parser = build_parser()
     args = parser.parse_args(argv)
 
-    if args.encrypt is not None:
-        return handle_encrypt(args.encrypt)
-
-    if not args.key:
-        print("error: --key is required for decryption", file=sys.stderr)
+    try:
+        drive = normalize_drive(args.encrypt or args.decrypt)
+    except VolumeCryptoError as exc:
+        print(f"error: {exc}", file=sys.stderr)
         return 1
 
-    return handle_decrypt(args.decrypt, args.key)
+    if args.encrypt is not None:
+        return encrypt_drive(drive)
+
+    try:
+        return decrypt_drive(drive, args.key)
+    except VolumeCryptoError as exc:
+        print(f"error: {exc}", file=sys.stderr)
+        return 1
 
 
 if __name__ == "__main__":
