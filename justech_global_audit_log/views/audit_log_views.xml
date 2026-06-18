@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem
+        id="menu_justech_global_audit_root"
+        name="Auditoría Global Justech"
+        parent="base.menu_custom"
+        sequence="85"
+        groups="base.group_system"
+    />
+
+    <record id="view_justech_audit_log_tree" model="ir.ui.view">
+        <field name="name">justech.audit.log.tree</field>
+        <field name="model">justech.audit.log</field>
+        <field name="arch" type="xml">
+            <tree string="Auditoría global" create="false" edit="false" delete="false">
+                <field name="change_date"/>
+                <field name="operation_type"/>
+                <field name="model_description"/>
+                <field name="model_name"/>
+                <field name="record_name"/>
+                <field name="field_description"/>
+                <field name="old_value"/>
+                <field name="new_value"/>
+                <field name="user_id"/>
+                <field name="company_id"/>
+                <field name="ip_address"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_justech_audit_log_form" model="ir.ui.view">
+        <field name="name">justech.audit.log.form</field>
+        <field name="model">justech.audit.log</field>
+        <field name="arch" type="xml">
+            <form string="Registro de auditoría" create="false" edit="false" delete="false">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="change_date"/>
+                            <field name="operation_type"/>
+                            <field name="model_description"/>
+                            <field name="model_name"/>
+                            <field name="record_id"/>
+                            <field name="record_name"/>
+                            <field name="field_description"/>
+                            <field name="field_name"/>
+                        </group>
+                        <group>
+                            <field name="user_id"/>
+                            <field name="company_id"/>
+                            <field name="ip_address"/>
+                            <field name="active"/>
+                        </group>
+                    </group>
+                    <group string="Valores">
+                        <field name="old_value" colspan="2" nolabel="1"/>
+                        <field name="new_value" colspan="2" nolabel="1"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_justech_audit_log_search" model="ir.ui.view">
+        <field name="name">justech.audit.log.search</field>
+        <field name="model">justech.audit.log</field>
+        <field name="arch" type="xml">
+            <search string="Buscar auditoría">
+                <field name="record_name"/>
+                <field name="model_name"/>
+                <field name="model_description"/>
+                <field name="field_name"/>
+                <field name="field_description"/>
+                <field name="user_id"/>
+                <field name="company_id"/>
+                <field name="old_value"/>
+                <field name="new_value"/>
+                <separator/>
+                <filter string="Creaciones" name="filter_create" domain="[('operation_type', '=', 'create')]"/>
+                <filter string="Modificaciones" name="filter_write" domain="[('operation_type', '=', 'write')]"/>
+                <filter string="Eliminaciones" name="filter_unlink" domain="[('operation_type', '=', 'unlink')]"/>
+                <separator/>
+                <filter string="Cambios de empresa" name="filter_company" domain="[('field_name', '=', 'company_id')]"/>
+                <filter string="Cambios de cliente" name="filter_partner" domain="[('field_name', '=', 'partner_id')]"/>
+                <separator/>
+                <filter string="Fecha de cambio" name="filter_change_date" date="change_date"/>
+                <group expand="0" string="Agrupar por">
+                    <filter string="Modelo" name="group_model" context="{'group_by': 'model_name'}"/>
+                    <filter string="Documento" name="group_record" context="{'group_by': 'record_name'}"/>
+                    <filter string="Usuario" name="group_user" context="{'group_by': 'user_id'}"/>
+                    <filter string="Empresa" name="group_company" context="{'group_by': 'company_id'}"/>
+                    <filter string="Operación" name="group_operation" context="{'group_by': 'operation_type'}"/>
+                    <filter string="Campo" name="group_field" context="{'group_by': 'field_name'}"/>
+                    <filter string="Fecha" name="group_date" context="{'group_by': 'change_date:day'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_justech_audit_log" model="ir.actions.act_window">
+        <field name="name">Logs de auditoría</field>
+        <field name="res_model">justech.audit.log</field>
+        <field name="view_mode">tree,form</field>
+        <field name="search_view_id" ref="view_justech_audit_log_search"/>
+    </record>
+
+    <menuitem
+        id="menu_justech_audit_log"
+        name="Logs"
+        parent="menu_justech_global_audit_root"
+        action="action_justech_audit_log"
+        sequence="10"
+        groups="base.group_system"
+    />
+</odoo>

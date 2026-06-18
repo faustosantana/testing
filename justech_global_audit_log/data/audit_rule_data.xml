@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="audit_rule_sale_order" model="justech.audit.rule">
+        <field name="name">Pedidos de venta</field>
+        <field name="model_id" ref="sale.model_sale_order"/>
+        <field name="active" eval="True"/>
+    </record>
+
+    <record id="audit_rule_purchase_order" model="justech.audit.rule">
+        <field name="name">Pedidos de compra</field>
+        <field name="model_id" ref="purchase.model_purchase_order"/>
+        <field name="active" eval="True"/>
+    </record>
+
+    <record id="audit_rule_account_move" model="justech.audit.rule">
+        <field name="name">Facturas y asientos</field>
+        <field name="model_id" ref="account.model_account_move"/>
+        <field name="active" eval="True"/>
+    </record>
+
+    <record id="audit_rule_stock_picking" model="justech.audit.rule">
+        <field name="name">Albaranes</field>
+        <field name="model_id" ref="stock.model_stock_picking"/>
+        <field name="active" eval="True"/>
+    </record>
+
+    <record id="audit_rule_res_partner" model="justech.audit.rule">
+        <field name="name">Contactos</field>
+        <field name="model_id" ref="base.model_res_partner"/>
+        <field name="active" eval="True"/>
+    </record>
+
+    <record id="audit_rule_product_template" model="justech.audit.rule">
+        <field name="name">Plantillas de producto</field>
+        <field name="model_id" ref="product.model_product_template"/>
+        <field name="active" eval="True"/>
+    </record>
+
+    <record id="audit_rule_product_product" model="justech.audit.rule">
+        <field name="name">Variantes de producto</field>
+        <field name="model_id" ref="product.model_product_product"/>
+        <field name="active" eval="True"/>
+    </record>
+
+    <record id="audit_rule_account_payment" model="justech.audit.rule">
+        <field name="name">Pagos</field>
+        <field name="model_id" ref="account.model_account_payment"/>
+        <field name="active" eval="True"/>
+    </record>
+
+    <record id="audit_rule_crm_lead" model="justech.audit.rule">
+        <field name="name">Oportunidades CRM</field>
+        <field name="model_id" ref="crm.model_crm_lead"/>
+        <field name="active" eval="True"/>
+    </record>
+
+    <record id="audit_rule_project_task" model="justech.audit.rule">
+        <field name="name">Tareas de proyecto</field>
+        <field name="model_id" ref="project.model_project_task"/>
+        <field name="active" eval="True"/>
+    </record>
+</odoo>
