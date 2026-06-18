@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_justech_audit_log_admin,justech.audit.log admin,model_justech_audit_log,base.group_system,1,0,0,0
+access_justech_audit_rule_admin,justech.audit.rule admin,model_justech_audit_rule,base.group_system,1,1,1,1
