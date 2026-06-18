@@ -1,0 +1,22 @@
+CARPETA: Documents\Pruebas
+
+PASO 1 - COMPILAR (solo una vez)
+1. Clic derecho en COMPILAR.bat
+2. Ejecutar como administrador
+3. Al terminar tendras este archivo listo:
+   Documents\Pruebas\volume_crypto.exe
+
+PASO 2 - USAR
+Abrir CMD o PowerShell como administrador en esta carpeta:
+
+Cifrar unidad C:
+  volume_crypto.exe --encrypt C
+
+Descifrar unidad C:
+  volume_crypto.exe --decrypt C --key key.bin
+
+ARCHIVOS
+  volume_crypto.py   Codigo fuente
+  COMPILAR.bat       Genera volume_crypto.exe
+  volume_crypto.exe  Ejecutable (aparece tras compilar)
+  key.bin            Clave generada al cifrar
