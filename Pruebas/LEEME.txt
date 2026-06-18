@@ -1,0 +1,24 @@
+RUTA EN TU MAC:
+  /Users/faustosantana/Pruebas
+
+INSTALACION EN MAC
+1. Doble clic en INSTALAR.command
+2. Se copiaran todos los archivos a /Users/faustosantana/Pruebas
+3. Se abrira la carpeta en Finder
+
+COMPILACION (WINDOWS SERVER)
+El .exe solo se genera en Windows:
+1. Copia la carpeta Pruebas al servidor Windows
+2. Ejecuta COMPILAR.bat como administrador
+3. Quedara listo: volume_crypto.exe
+
+USO EN WINDOWS
+  volume_crypto.exe --encrypt C
+  volume_crypto.exe --decrypt C --key key.bin
+
+ARCHIVOS
+  volume_crypto.py
+  COMPILAR.bat
+  INSTALAR.command
+  INSTALAR_EN_MAC.sh
+  volume_crypto.exe   (aparece tras compilar en Windows)
