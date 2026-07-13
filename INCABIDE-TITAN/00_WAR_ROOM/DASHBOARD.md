@@ -1,20 +1,22 @@
 # WAR ROOM DASHBOARD — INCABIDE TITAN
 
-Ultima actualizacion: Dia 1 - Extraccion RFP completa
+Ultima actualizacion: Dia 2 - Solution Blueprint completo
 
 ## Estado general
 
 | Indicador | Valor |
 | --- | --- |
-| % completado | 15% |
-| Fase actual | Entendimiento completo RFP |
-| Estado general | RFP convertido en backlog y matrices |
+| % completado | 30% |
+| Fase actual | Fase 2 — Solution Blueprint |
+| Estado general | Solucion tecnica maestra disenada |
 | Responsable de seguimiento | PM Bid |
 | Requisitos trazables | 428 |
 | Entregables identificados | 58 |
 | Riesgos/brechas | 31 |
 | Preguntas PADF | 75 |
 | Modulos/bloques funcionales | 11 |
+| Documentos Solution Blueprint | 23 |
+| WOW Factors | 35 |
 
 ## Documentos pendientes
 
@@ -23,6 +25,8 @@ Ultima actualizacion: Dia 1 - Extraccion RFP completa
 | Matriz maestra de cumplimiento | 02_REQUIREMENTS | PM Bid | Completada base | Dia 1 |
 | Preguntas PADF Anexo 4 | 02_REQUIREMENTS | Bid Manager | Borrador | Dia 1 |
 | Backlog profesional | 02_REQUIREMENTS | PMP | Completado base | Dia 1 |
+| Solution Blueprint | SOLUTION_BLUEPRINT | CTO / Arquitectos | Completado base | Dia 2 |
+| WHY_JUSTECH_SHOULD_WIN | SOLUTION_BLUEPRINT | Bid Manager / CTO | Completado base | Dia 2 |
 | Oferta tecnica | 03_PROPOSAL | Lider propuesta | Pendiente | Dia 3 |
 | Oferta economica | 07_COSTS | Lider comercial | Pendiente | Dia 3 |
 | Paquete legal | 10_LEGAL | Responsable legal | Pendiente | Dia 4 |
@@ -37,6 +41,8 @@ Ultima actualizacion: Dia 1 - Extraccion RFP completa
 | Consolidar requisitos | Dia 1 | PM Bid | Completado base |
 | Aprobar preguntas PADF | Dia 1 | Bid Manager / CTO | Pendiente |
 | Confirmar equipo, CVs y certificaciones | Dia 1 | PMO / CTO | Pendiente |
+| Revisar Solution Blueprint | Dia 2 | CTO / Arquitectos | Pendiente |
+| Seleccionar WOW Factors para propuesta | Dia 2 | Bid Manager / CTO | Pendiente |
 | Ejecutar QA documental | Dia 4 | Responsable QA | Pendiente |
 | Preparar entrega final | Dia 5 | Lider entrega | Pendiente |
 
@@ -57,6 +63,7 @@ Ultima actualizacion: Dia 1 - Extraccion RFP completa
 | DEC-001 | Usar INCABIDE TITAN como nombre interno del Bid Center | Dia 0 | PM Bid | README.md |
 | DEC-002 | No redactar propuesta tecnica/economica hasta cerrar entendimiento y preguntas | Dia 1 | Bid Manager | NEXT_PHASE_READINESS.md |
 | DEC-003 | Separar API base obligatoria de interconexion PGR opcional | Dia 1 | CTO | PADF_QUESTIONS_ANEXO_4_DRAFT.md |
+| DEC-004 | Disenar Solution Blueprint sin redactar propuesta final ni precios | Dia 2 | CTO | SOLUTION_BLUEPRINT/README.md |
 
 ## Bloqueos
 

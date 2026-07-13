@@ -19,6 +19,7 @@ directories=(
   "12_VIDEO"
   "13_WEBSITE"
   "99_EVIDENCE"
+  "SOLUTION_BLUEPRINT"
   "docs"
   "scripts"
   "templates"
