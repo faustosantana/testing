@@ -16,6 +16,8 @@ directories=(
   "09_TEAM"
   "10_LEGAL"
   "11_DELIVERY"
+  "12_VIDEO"
+  "13_WEBSITE"
   "99_EVIDENCE"
   "docs"
   "scripts"
