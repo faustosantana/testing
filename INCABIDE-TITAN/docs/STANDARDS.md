@@ -85,3 +85,11 @@ Antes de declarar un documento como listo:
 - Revisar ortografia y consistencia.
 - Validar trazabilidad con requisitos.
 - Confirmar evidencias asociadas.
+
+## Criterio de no conformidad
+
+El proyecto adopta el criterio formal de no conformidad definido en `docs/QUALITY_NON_CONFORMITY_CRITERIA.md`.
+
+Ningun entregable debe marcarse `PASS` solo porque no produjo error, abrio correctamente o paso una prueba aislada. Para aprobar, debe ser usable, coherente, consistente, seguro, claro, respetar permisos, evitar duplicidad y no introducir deuda tecnica evidente.
+
+Si existe una alternativa claramente mejor dentro del mismo alcance, debe implementarse o documentarse antes de aprobar el entregable.

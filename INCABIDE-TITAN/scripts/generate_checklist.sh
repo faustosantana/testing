@@ -21,6 +21,10 @@ Generado por: `scripts/generate_checklist.sh`
 | FIN-008 | Evidencias almacenadas | Pendiente | TBD |
 | FIN-009 | Revision legal completada | Pendiente | TBD |
 | FIN-010 | Paquete final listo para entrega | Pendiente | TBD |
+| FIN-011 | Criterio de no conformidad aplicado: no se acepto solo porque funciona | Pendiente | TBD |
+| FIN-012 | Usabilidad, coherencia, consistencia, permisos y UX validados | Pendiente | TBD |
+| FIN-013 | Duplicidad, deuda tecnica evidente y confusion de usuario revisadas | Pendiente | TBD |
+| FIN-014 | Alternativas superiores dentro del alcance evaluadas/documentadas | Pendiente | TBD |
 
 ## Observaciones
 
