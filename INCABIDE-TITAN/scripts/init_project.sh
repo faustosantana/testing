@@ -20,6 +20,7 @@ directories=(
   "13_WEBSITE"
   "99_EVIDENCE"
   "SOLUTION_BLUEPRINT"
+  "SOLUTION_STORY"
   "UX_MASTER"
   "docs"
   "scripts"
