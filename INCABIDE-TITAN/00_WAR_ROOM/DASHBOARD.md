@@ -86,6 +86,7 @@ Ultima actualizacion: Dia 5 - Oferta Tecnica modular en construccion
 | DEC-008 | Adoptar criterio de no conformidad: no marcar PASS solo porque funciona | Dia 4 | QA Manager / CTO | docs/QUALITY_NON_CONFORMITY_CRITERIA.md |
 | DEC-009 | Adoptar ciclo de mejora continua y filosofia Enterprise moderna, no ERP | Dia 4 | QA Manager / UX Lead / CTO | docs/CONTINUOUS_IMPROVEMENT_CYCLE.md |
 | DEC-010 | Construir Oferta Tecnica en documentos modulares, sin inventar informacion corporativa | Dia 5 | Bid Manager / CTO | TECHNICAL_PROPOSAL/README.md |
+| DEC-011 | Adoptar critica tecnica obligatoria antes de cualquier fase o trabajo nuevo | Dia 5 | Technical Delivery Manager / Principal Architect / QA Lead | docs/TECHNICAL_CRITICAL_REVIEW_RULE.md |
 
 ## Bloqueos
 

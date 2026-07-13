@@ -18,6 +18,14 @@
 - Revision de permisos, seguridad y separacion de contexto cuando aplique.
 - Revision de deuda tecnica, duplicidad y confusion potencial para el usuario.
 
+## Critica tecnica obligatoria antes de iniciar
+
+Antes de comenzar cualquier trabajo, aplicar `docs/TECHNICAL_CRITICAL_REVIEW_RULE.md`.
+
+Preguntar si existe una manera mejor de abordar la fase, una arquitectura mas solida, una estrategia mas eficiente, una practica Enterprise superior, riesgo de retrabajo, dependencias que deban resolverse primero o consideraciones que el usuario no este viendo.
+
+Si existe una alternativa claramente superior, detener la ejecucion, documentar la alternativa y esperar aprobacion antes de cambiar el enfoque.
+
 ## Criterio de no conformidad
 
 No marcar `PASS` solo porque una funcionalidad no produjo error, abrio correctamente o paso una prueba aislada.
@@ -59,3 +67,6 @@ No disenar como un ERP. Disenar como un producto Enterprise moderno. Cada pantal
 | QA-011 | Regresiones buscadas y documentadas | TBD | Pendiente | TBD |
 | QA-012 | Oportunidades adicionales de mejora evaluadas | TBD | Pendiente | TBD |
 | QA-013 | Experiencia evaluada contra filosofia Enterprise moderna, no ERP | TBD | Pendiente | TBD |
+| QA-014 | Critica tecnica previa ejecutada antes de iniciar trabajo | TBD | Pendiente | TBD |
+| QA-015 | Alternativas superiores evaluadas antes de ejecutar | TBD | Pendiente | TBD |
+| QA-016 | Dependencias y riesgo de retrabajo revisados antes de avanzar | TBD | Pendiente | TBD |

@@ -86,6 +86,14 @@ Antes de declarar un documento como listo:
 - Validar trazabilidad con requisitos.
 - Confirmar evidencias asociadas.
 
+## Critica tecnica obligatoria antes de iniciar
+
+Antes de comenzar cualquier fase, documento, diseno, arquitectura, demo, mockup, correccion o implementacion, se debe aplicar la regla permanente definida en `docs/TECHNICAL_CRITICAL_REVIEW_RULE.md`.
+
+El equipo debe preguntarse si existe una manera mejor de ejecutar la fase, una arquitectura mas solida, una estrategia mas eficiente, una practica Enterprise superior, riesgo de retrabajo, dependencias no resueltas o puntos que el usuario no esta considerando.
+
+Si existe una alternativa claramente superior, se debe detener la ejecucion, explicar la alternativa, justificarla y esperar aprobacion antes de cambiar el enfoque.
+
 ## Criterio de no conformidad
 
 El proyecto adopta el criterio formal de no conformidad definido en `docs/QUALITY_NON_CONFORMITY_CRITERIA.md`.

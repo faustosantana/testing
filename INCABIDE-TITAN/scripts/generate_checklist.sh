@@ -29,6 +29,9 @@ Generado por: `scripts/generate_checklist.sh`
 | FIN-016 | Regresiones buscadas despues de cada correccion | Pendiente | TBD |
 | FIN-017 | Oportunidades adicionales de mejora evaluadas | Pendiente | TBD |
 | FIN-018 | Experiencia validada contra filosofia Enterprise moderna, no ERP | Pendiente | TBD |
+| FIN-019 | Critica tecnica obligatoria ejecutada antes de iniciar fases o trabajos | Pendiente | TBD |
+| FIN-020 | Alternativas superiores evaluadas y aprobadas antes de cambiar enfoque | Pendiente | TBD |
+| FIN-021 | Dependencias y riesgo de retrabajo revisados antes de avanzar | Pendiente | TBD |
 
 ## Observaciones
 
