@@ -1,14 +1,14 @@
 # WAR ROOM DASHBOARD — INCABIDE TITAN
 
-Ultima actualizacion: Dia 4 - Azure Enterprise Architecture completa
+Ultima actualizacion: Dia 5 - Oferta Tecnica modular en construccion
 
 ## Estado general
 
 | Indicador | Valor |
 | --- | --- |
-| % completado | 65% |
-| Fase actual | Fase 4 — Microsoft Azure Enterprise Architecture |
-| Estado general | Arquitectura Azure Enterprise disenada |
+| % completado | 75% |
+| Fase actual | Fase 5 — Construccion de Oferta Tecnica |
+| Estado general | Oferta Tecnica modular creada, pendiente informacion Justech |
 | Responsable de seguimiento | PM Bid |
 | Requisitos trazables | 428 |
 | Entregables identificados | 58 |
@@ -21,6 +21,7 @@ Ultima actualizacion: Dia 4 - Azure Enterprise Architecture completa
 | Design Differentiators | 45 |
 | Documentos Solution Story | 21 |
 | Documentos Azure Enterprise | 28 |
+| Documentos Technical Proposal | 22 |
 
 ## Documentos pendientes
 
@@ -34,7 +35,9 @@ Ultima actualizacion: Dia 4 - Azure Enterprise Architecture completa
 | UX Master Design | UX_MASTER | UX/UI Lead | Completado base | Dia 3 |
 | Solution Story | SOLUTION_STORY | Bid Manager / CTO | Completado base | Dia 3 |
 | Azure Enterprise Architecture | AZURE_ENTERPRISE | Arquitecto Azure | Completado base | Dia 4 |
-| Oferta tecnica | 03_PROPOSAL | Lider propuesta | Pendiente | Dia 3 |
+| Oferta tecnica modular | TECHNICAL_PROPOSAL | Lider propuesta | Borrador base | Dia 5 |
+| Informacion faltante Justech | TECHNICAL_PROPOSAL | Bid Manager | Identificada | Dia 5 |
+| Oferta tecnica final compilada | 03_PROPOSAL | Lider propuesta | Pendiente revision | Dia 5 |
 | Oferta economica | 07_COSTS | Lider comercial | Pendiente | Dia 3 |
 | Paquete legal | 10_LEGAL | Responsable legal | Pendiente | Dia 4 |
 | Checklist de entrega | 11_DELIVERY | Lider entrega | Pendiente | Dia 5 |
@@ -54,6 +57,8 @@ Ultima actualizacion: Dia 4 - Azure Enterprise Architecture completa
 | Priorizar pantallas para mockups futuros | Dia 3 | UX/UI Lead / Bid Manager | Pendiente |
 | Revisar Solution Story | Dia 3 | Bid Manager / CTO | Pendiente |
 | Validar decisiones Azure pendientes | Dia 4 | Arquitecto Azure / CTO | Pendiente |
+| Revisar Oferta Tecnica modular | Dia 5 | Bid Manager / CTO | Pendiente |
+| Completar informacion corporativa Justech | Dia 5 | Justech / Bid Manager | Pendiente |
 | Ejecutar QA documental | Dia 4 | Responsable QA | Pendiente |
 | Preparar entrega final | Dia 5 | Lider entrega | Pendiente |
 
@@ -80,6 +85,7 @@ Ultima actualizacion: Dia 4 - Azure Enterprise Architecture completa
 | DEC-007 | Disenar arquitectura Azure Enterprise sin IaC, despliegue, diagramas ni precios | Dia 4 | Arquitecto Azure | AZURE_ENTERPRISE/README.md |
 | DEC-008 | Adoptar criterio de no conformidad: no marcar PASS solo porque funciona | Dia 4 | QA Manager / CTO | docs/QUALITY_NON_CONFORMITY_CRITERIA.md |
 | DEC-009 | Adoptar ciclo de mejora continua y filosofia Enterprise moderna, no ERP | Dia 4 | QA Manager / UX Lead / CTO | docs/CONTINUOUS_IMPROVEMENT_CYCLE.md |
+| DEC-010 | Construir Oferta Tecnica en documentos modulares, sin inventar informacion corporativa | Dia 5 | Bid Manager / CTO | TECHNICAL_PROPOSAL/README.md |
 
 ## Bloqueos
 

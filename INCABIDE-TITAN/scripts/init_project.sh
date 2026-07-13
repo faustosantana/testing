@@ -22,6 +22,7 @@ directories=(
   "AZURE_ENTERPRISE"
   "SOLUTION_BLUEPRINT"
   "SOLUTION_STORY"
+  "TECHNICAL_PROPOSAL"
   "UX_MASTER"
   "docs"
   "scripts"
