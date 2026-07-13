@@ -52,3 +52,20 @@ El usuario debe sentir que el SGB:
 ## Criterio de exito UX
 
 Un Director debe entender la situacion institucional en 30 segundos. Un operador debe registrar un bien sin entrenamiento excesivo. Un auditor debe reconstruir una decision sin pedir explicaciones fuera del sistema.
+
+## Filosofia de producto Enterprise
+
+No disenar como un ERP tradicional. Disenar como un producto Enterprise moderno comparable en claridad y calidad a Microsoft, Azure Portal, GitHub Enterprise, Stripe Dashboard, Linear, Atlassian o Notion.
+
+Cada pantalla debe responder:
+
+- ¿Puede eliminarse algo?
+- ¿Puede simplificarse?
+- ¿Puede reducirse el numero de clics?
+- ¿Puede entenderse sin capacitacion?
+- ¿Puede verse mejor?
+- ¿Puede ser mas rapida?
+- ¿Puede ser mas elegante?
+- ¿Puede parecer un producto desarrollado por Microsoft?
+
+No aceptar interfaces unicamente funcionales. Buscar una experiencia de clase mundial.

@@ -27,6 +27,7 @@ required_paths=(
   "UX_MASTER"
   "docs"
   "docs/STANDARDS.md"
+  "docs/CONTINUOUS_IMPROVEMENT_CYCLE.md"
   "docs/QUALITY_NON_CONFORMITY_CRITERIA.md"
   "docs/EVALUATION_WIN_STRATEGY.md"
   "docs/EXECUTIVE_RFP_REPORT.md"

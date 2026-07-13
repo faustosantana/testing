@@ -85,3 +85,17 @@ Este criterio aplica a:
 ## Regla final
 
 No conformarse con "funciona". Buscar excelencia, claridad, seguridad y consistencia institucional.
+
+## Ciclo de mejora continua
+
+Toda correccion debe seguir el ciclo definido en `docs/CONTINUOUS_IMPROVEMENT_CYCLE.md`.
+
+Despues de cada correccion se debe:
+
+1. revalidar la pantalla;
+2. revalidar el flujo completo;
+3. revalidar el modulo;
+4. buscar regresiones;
+5. buscar oportunidades adicionales de mejora.
+
+Si aparece un nuevo problema, se debe corregir y reiniciar el ciclo hasta estabilizar completamente el area.

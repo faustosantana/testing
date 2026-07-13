@@ -25,6 +25,10 @@ Generado por: `scripts/generate_checklist.sh`
 | FIN-012 | Usabilidad, coherencia, consistencia, permisos y UX validados | Pendiente | TBD |
 | FIN-013 | Duplicidad, deuda tecnica evidente y confusion de usuario revisadas | Pendiente | TBD |
 | FIN-014 | Alternativas superiores dentro del alcance evaluadas/documentadas | Pendiente | TBD |
+| FIN-015 | Ciclo post-correccion aplicado: pantalla, flujo y modulo revalidados | Pendiente | TBD |
+| FIN-016 | Regresiones buscadas despues de cada correccion | Pendiente | TBD |
+| FIN-017 | Oportunidades adicionales de mejora evaluadas | Pendiente | TBD |
+| FIN-018 | Experiencia validada contra filosofia Enterprise moderna, no ERP | Pendiente | TBD |
 
 ## Observaciones
 

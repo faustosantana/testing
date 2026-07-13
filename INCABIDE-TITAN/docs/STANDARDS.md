@@ -93,3 +93,15 @@ El proyecto adopta el criterio formal de no conformidad definido en `docs/QUALIT
 Ningun entregable debe marcarse `PASS` solo porque no produjo error, abrio correctamente o paso una prueba aislada. Para aprobar, debe ser usable, coherente, consistente, seguro, claro, respetar permisos, evitar duplicidad y no introducir deuda tecnica evidente.
 
 Si existe una alternativa claramente mejor dentro del mismo alcance, debe implementarse o documentarse antes de aprobar el entregable.
+
+## Ciclo de mejora continua
+
+Todo cambio debe aplicar el ciclo definido en `docs/CONTINUOUS_IMPROVEMENT_CYCLE.md`.
+
+Despues de cada correccion se debe revalidar pantalla, flujo completo y modulo; buscar regresiones; y buscar oportunidades adicionales de mejora. Si aparece un nuevo problema, se corrige y se reinicia la revalidacion hasta estabilizar completamente el area.
+
+La auditoria no debe limitarse a los problemas encontrados inicialmente.
+
+## Filosofia de producto
+
+No disenar como un ERP. Disenar como producto Enterprise moderno. Cada pantalla debe cuestionar si puede eliminarse algo, simplificarse, reducir clics, entenderse sin capacitacion, verse mejor, ser mas rapida, mas elegante y parecer desarrollada por Microsoft.

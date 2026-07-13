@@ -79,6 +79,7 @@ Ultima actualizacion: Dia 4 - Azure Enterprise Architecture completa
 | DEC-006 | Construir narrativa completa sin propuesta final, mockups, pantallas, demo ni frontend | Dia 3 | Bid Manager / CTO | SOLUTION_STORY/README.md |
 | DEC-007 | Disenar arquitectura Azure Enterprise sin IaC, despliegue, diagramas ni precios | Dia 4 | Arquitecto Azure | AZURE_ENTERPRISE/README.md |
 | DEC-008 | Adoptar criterio de no conformidad: no marcar PASS solo porque funciona | Dia 4 | QA Manager / CTO | docs/QUALITY_NON_CONFORMITY_CRITERIA.md |
+| DEC-009 | Adoptar ciclo de mejora continua y filosofia Enterprise moderna, no ERP | Dia 4 | QA Manager / UX Lead / CTO | docs/CONTINUOUS_IMPROVEMENT_CYCLE.md |
 
 ## Bloqueos
 

@@ -26,6 +26,22 @@ Una funcionalidad solo puede aprobarse si es usable, coherente, consistente con 
 
 Si existe una alternativa claramente mejor dentro del mismo alcance, debe implementarse o documentarse antes de aprobar.
 
+## Ciclo de mejora continua
+
+Despues de cada correccion:
+
+1. Revalidar la pantalla.
+2. Revalidar el flujo completo.
+3. Revalidar el modulo.
+4. Buscar regresiones.
+5. Buscar oportunidades adicionales de mejora.
+
+Si aparece un nuevo problema, debe corregirse y reiniciar el ciclo hasta estabilizar completamente el area. No limitar la auditoria a los problemas encontrados inicialmente.
+
+## Filosofia de producto
+
+No disenar como un ERP. Disenar como un producto Enterprise moderno. Cada pantalla debe evaluarse preguntando si puede eliminarse algo, simplificarse, reducir clics, entenderse sin capacitacion, verse mejor, ser mas rapida, mas elegante y parecer un producto desarrollado por Microsoft.
+
 ## Checklist
 
 | ID | Control | Responsable | Estado | Evidencia |
@@ -39,3 +55,7 @@ Si existe una alternativa claramente mejor dentro del mismo alcance, debe implem
 | QA-007 | Permisos y separacion de contexto validados | TBD | Pendiente | TBD |
 | QA-008 | Sin duplicidad ni deuda tecnica evidente | TBD | Pendiente | TBD |
 | QA-009 | Alternativas superiores dentro del alcance evaluadas | TBD | Pendiente | TBD |
+| QA-010 | Pantalla, flujo completo y modulo revalidados despues de correcciones | TBD | Pendiente | TBD |
+| QA-011 | Regresiones buscadas y documentadas | TBD | Pendiente | TBD |
+| QA-012 | Oportunidades adicionales de mejora evaluadas | TBD | Pendiente | TBD |
+| QA-013 | Experiencia evaluada contra filosofia Enterprise moderna, no ERP | TBD | Pendiente | TBD |
