@@ -1,48 +1,56 @@
 # 14 — TRAINING
 
-## Objetivo
+## Enfoque de capacitacion
 
-Describir el enfoque de transferencia de conocimiento y capacitacion requerido para INCABIDE.
+La transferencia de conocimiento es un hito explicito de la RFP. El objetivo no es realizar una sesion informativa aislada, sino asegurar que el equipo tecnico de INCABIDE pueda comprender la arquitectura implementada, operar procedimientos basicos y gestionar la plataforma con autonomia razonable.
 
-## Enfoque
+## Capacitacion minima requerida
 
-La capacitacion debe asegurar que el equipo tecnico de INCABIDE pueda gestionar la plataforma de forma autonoma en los procedimientos documentados.
+La RFP exige una sesion de capacitacion de minimo 4 horas, virtual o presencial segun lo acordado, con grabacion o presentacion en PDF y lista de asistencia firmada con al menos 2 tecnicos de INCABIDE. Tambien exige que INCABIDE confirme por escrito que su equipo tecnico puede gestionar la plataforma de forma autonoma.
 
-Contempla:
+## Contenido recomendado
 
-- sesion minima de 4 horas;
-- material PDF o grabacion;
+La capacitacion tecnica debe cubrir:
+
+- vision general de arquitectura;
+- componentes Azure implementados;
+- contenedores y procedimientos de inicio, parada y reinicio;
+- variables de entorno y configuracion;
+- gestion de secretos;
+- monitoreo y alertas;
+- backups y restauracion;
+- gestion de usuarios y permisos;
+- procedimiento de soporte y escalamiento;
+- buenas practicas operativas;
+- ubicacion de documentacion tecnica.
+
+## Materiales de transferencia
+
+Los materiales deben incluir:
+
+- presentacion PDF o grabacion;
+- manual tecnico;
+- runbooks operativos;
+- procedimiento de restauracion;
+- guia de administracion de usuarios;
 - lista de asistencia;
-- minimo 2 tecnicos INCABIDE;
-- confirmacion escrita de autonomia;
-- guias y runbooks.
+- preguntas y respuestas;
+- confirmacion de autonomia.
 
-## Relacion con la RFP
+## Capacitacion funcional por modulos
 
-Responde al Hito 6 de Etapa I y a los requisitos de documentacion/manuales por modulo de Etapa II.
+Para Etapa II, cada modulo desarrollado debe incluir manual de usuario en espanol, con capturas actualizadas, y debe ser validado como parte de su acta de aceptacion parcial. La capacitacion funcional debe alinearse con roles: operadores, gerentes, auditores, administradores y usuarios de consulta.
 
-## Requisitos cubiertos
+## Trazabilidad RFP
 
-- CAP-001 a CAP-004.
-- QA-014 a QA-016.
-- DOC-008, DOC-010, DOC-016.
+Este capitulo cubre CAP-001 a CAP-004, QA-014 a QA-016, DOC-008, DOC-010 y DOC-016.
 
-## Evidencias necesarias
+## Informacion pendiente de Justech
 
-- Agenda.
-- Presentacion o grabacion.
-- Lista de asistencia firmada.
-- Confirmacion INCABIDE.
-- Manuales.
+Justech debe confirmar:
 
-## Dependencias
-
-- Disponibilidad de tecnicos INCABIDE.
-- Alcance de arquitectura final.
-- Procedimientos operativos finales.
-
-## Pendientes de informacion de Justech
-
-- Materiales de capacitacion existentes.
-- Formadores disponibles.
-- Enfoque propio de transferencia.
+- formadores disponibles;
+- materiales base existentes;
+- metodologia de transferencia;
+- experiencia capacitando equipos tecnicos;
+- formato de manuales y runbooks.

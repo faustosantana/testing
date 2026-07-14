@@ -1,66 +1,66 @@
 # 17 — DELIVERABLES
 
-## Objetivo
+## Entregables de Etapa I
 
-Listar entregables tecnicos esperados para la propuesta, alineados con hitos y modulos de la RFP.
+La Etapa I debe producir entregables verificables y alineados con los hitos de la RFP. Los entregables principales son:
 
-## Entregables Etapa I
+1. informe de analisis de compatibilidad del codigo fuente;
+2. inventario de dependencias y acciones de actualizacion/correccion;
+3. codigo fuente refactorizado para operacion cloud;
+4. adaptacion de funcionalidades existentes afectadas por infraestructura;
+5. sistema con identidad visual y terminologia INCABIDE aplicada;
+6. tabla de mapeo terminologico completada y validada;
+7. infraestructura Azure activa y documentada;
+8. evidencias de despliegue;
+9. aplicacion accesible por dominio personalizado con TLS;
+10. Dockerfile y Docker Compose en repositorio, conforme a la RFP;
+11. API funcional del SGB validada en produccion;
+12. evidencias de seguridad requeridas por la RFP;
+13. documentacion tecnica versionada;
+14. capacitacion tecnica minima;
+15. constancia de infraestructura cloud por 12 meses;
+16. inventario de credenciales entregadas y verificadas;
+17. contrato o adenda de soporte por un ano.
 
-- Informe de compatibilidad.
-- Listado de dependencias actualizadas.
-- Codigo fuente refactorizado en Git.
-- Sistema personalizado con identidad INCABIDE.
-- Tabla terminologica validada.
-- Infraestructura Azure activa.
-- Aplicacion en dominio personalizado con TLS.
-- Dockerfile y Docker Compose en repositorio.
-- API funcional validada.
-- Evidencias de seguridad.
-- Documentacion tecnica.
-- Capacitacion tecnica.
-- Constancia de infraestructura cloud 12 meses.
-- Inventario de credenciales.
-- Adenda/contrato de soporte.
+## Entregables de seguridad
 
-## Entregables Etapa II
+Antes de solicitar aprobacion de puesta en produccion, deben entregarse:
 
-Por modulo:
+- documento de arquitectura de seguridad;
+- informe de vulnerabilidades con CVSS y remediaciones;
+- reporte TLS/HTTPS;
+- evidencia de MFA;
+- respaldo operativo restaurable;
+- declaracion de ausencia de credenciales en codigo;
+- pentest tercero independiente posterior a produccion, con plan de remediacion.
 
-- mockups/prototipos validados;
-- codigo fuente;
-- especificaciones funcionales;
-- pruebas funcionales/UAT;
-- manual de usuario;
-- acta de aceptacion parcial;
-- entregables especificos del modulo.
+## Entregables de Etapa II
 
-## Relacion con la RFP
+Cada modulo contratado de Etapa II debe entregar:
 
-Basado en Anexo 2, calendario de hitos, criterios de aceptacion y entregables por modulo.
+- mockups o prototipos navegables validados por INCABIDE antes del desarrollo;
+- codigo fuente completo en repositorio Git designado;
+- especificaciones funcionales aprobadas;
+- pruebas funcionales ejecutadas y aprobadas, minimo UAT;
+- manual de usuario en espanol;
+- acta de aceptacion parcial firmada;
+- entregables especificos de cada modulo.
 
-## Requisitos cubiertos
+## Entregables de cierre
 
-- DEL-011 a DEL-058 del mapa documental.
-- QA-001 a QA-029.
-- DOC-008 a DOC-017.
+El cierre requiere aprobaciones de hitos, actas parciales de modulos contratados, documentacion completa, codigo fuente, inventario de credenciales, evidencias de seguridad, pentest, soporte firmado y declaracion de no retencion de codigo, credenciales ni datos.
 
-## Evidencias necesarias
+## Trazabilidad RFP
 
-- Actas.
-- Reportes.
-- Capturas/registros.
-- Repositorio.
-- Documentos firmados.
+Este capitulo cubre DEL-011 a DEL-058, DOC-008 a DOC-017, QA-001 a QA-029 y requisitos especificos de Anexo 2, secciones 3.1, 5.3 y 7.
 
-## Dependencias
+## Informacion pendiente de Justech
 
-- Aprobaciones PADF/INCABIDE.
-- Ambientes.
-- Accesos.
-- Usuarios UAT.
+Justech debe confirmar:
 
-## Pendientes de informacion de Justech
-
-- Formato de entregables propio.
-- Plantillas tecnicas.
-- Responsables por entregable.
+- plantillas de entregables;
+- responsables por entregable;
+- formato de documentacion;
+- herramienta de repositorio;
+- procedimiento de entrega de evidencias;
+- modelo de actas y aprobaciones.

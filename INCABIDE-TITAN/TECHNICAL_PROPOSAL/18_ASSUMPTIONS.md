@@ -1,48 +1,65 @@
 # 18 — ASSUMPTIONS
 
-## Objetivo
+## Proposito
 
-Registrar supuestos tecnicos necesarios para construir la Oferta Tecnica sin inventar informacion no provista.
+Esta seccion registra supuestos tecnicos necesarios para interpretar correctamente la Oferta Tecnica. Los supuestos no sustituyen respuestas oficiales de PADF/INCABIDE ni informacion verificable de Justech. Cualquier supuesto critico debe validarse antes de cerrar compromisos contractuales, tecnicos o economicos.
 
-## Supuestos controlados
+## Supuestos basados en la RFP
 
-| Supuesto | Estado |
-| --- | --- |
-| El codigo fuente sera entregado al adjudicatario bajo NDA. | Basado en RFP |
-| Azure es plataforma obligatoria. | Basado en RFP |
-| PostgreSQL 14+ con PostGIS/unaccent es motor preferido. | Basado en RFP |
-| La integracion efectiva con PGR se cotiza por separado. | Basado en RFP |
-| La region Azure debe ser aprobada por INCABIDE. | PENDIENTE DE VALIDACION |
-| El alcance minimo de API debe ser confirmado. | PENDIENTE DE VALIDACION |
-| Ambientes dev/test/UAT/prod deben confirmarse. | PENDIENTE DE VALIDACION |
-| Volumen de datos y usuarios debe confirmarse. | PENDIENTE DE VALIDACION |
-| Soporte critico fuera de horario requiere aclaracion. | PENDIENTE DE VALIDACION |
+- El codigo fuente del SGB sera entregado unicamente al adjudicatario, bajo las condiciones de confidencialidad correspondientes.
+- La Etapa I no incluye desarrollo de nuevas funcionalidades, sino adaptacion, personalizacion y despliegue del sistema existente.
+- Microsoft Azure es plataforma obligatoria y no sustituible.
+- PostgreSQL 14+ con PostGIS y unaccent es el motor preferido.
+- Un motor alternativo solo seria aceptable si garantiza capacidades equivalentes y cuenta con validacion de INCABIDE.
+- La API funcional del SGB es un entregable obligatorio.
+- La interconexion efectiva con PGR depende de aprobacion de dicha institucion y debe cotizarse por separado.
+- La infraestructura cloud y el soporte tecnico se incluyen por un ano conforme a la RFP.
+- Cada hito requiere aprobacion escrita de PADF/INCABIDE para considerarse entregado.
 
-## Relacion con la RFP
+## Supuestos pendientes de validacion PADF/INCABIDE
 
-Los supuestos derivan de dependencias explicitas o vacios identificados en la matriz de cumplimiento y preguntas PADF.
+- Region Azure.
+- Tenant y suscripcion Azure.
+- Ambientes requeridos: desarrollo, QA, UAT, produccion.
+- Alcance minimo de la API del SGB.
+- Alcance y especificacion tecnica del sistema de subastas existente.
+- Usuarios totales y concurrentes.
+- Volumen de datos y documentos.
+- Necesidad y alcance de migracion historica.
+- RTO, RPO y retencion de backups.
+- Retencion de logs.
+- Nivel de WAF y DDoS.
+- Modelo de VPN o Bastion.
+- Proveedor o criterio para pentest.
+- Catalogos oficiales de provincias, municipios, entidades remitentes y tipos de activos.
+- Alcance del soporte critico fuera de horario respecto al volumen estimado de horas.
 
-## Requisitos cubiertos
+## Supuestos pendientes de Justech
 
-- ADM-003.
-- TEC-003.
-- AZ-001 a AZ-015.
-- TEC-024 a TEC-026.
-- SUP-008.
+- Equipo final asignado.
+- Certificacion PMP del lider de proyecto.
+- Certificaciones Microsoft/Azure reales, si se incluiran.
+- Referencias comparables verificables.
+- Capacidad de soporte fuera de horario.
+- Herramientas de DevSecOps, QA, monitoreo y soporte.
+- Politicas internas de seguridad, calidad y continuidad.
+- Supuestos y exclusiones aceptables para la version final.
 
-## Evidencias necesarias
+## Gestion de supuestos
 
-- Respuestas PADF.
-- Actas o comunicaciones oficiales.
-- Decisiones internas aprobadas.
+Cada supuesto debe mantenerse trazable a:
 
-## Dependencias
+- requisito RFP;
+- pregunta PADF si aplica;
+- decision interna Justech;
+- impacto tecnico;
+- impacto operativo;
+- evidencia o documento que lo cierre.
 
-- Preguntas y respuestas.
-- Confirmacion Justech/PADF/INCABIDE.
+## Trazabilidad RFP
 
-## Pendientes de informacion de Justech
+Este capitulo cubre ADM-003, TEC-003, TEC-008, TEC-011, TEC-012, TEC-024 a TEC-026, AZ-001 a AZ-015, SUP-008 y brechas identificadas en la matriz de cumplimiento.
 
-- Supuestos comerciales y tecnicos internos permitidos.
-- Riesgos aceptables.
-- Capacidades confirmadas.
+## Regla final
+
+Ningun supuesto debe convertirse en compromiso final sin validacion oficial, evidencia suficiente o aprobacion interna de Justech.

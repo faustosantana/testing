@@ -1,54 +1,61 @@
 # 08 — AZURE STRATEGY
 
-## Objetivo
+## Estrategia Azure
 
-Presentar la estrategia Azure de alto nivel para desplegar el SGB cumpliendo seguridad, operacion, monitoreo, backups y transferencia de control.
+La RFP establece que Microsoft Azure es la plataforma obligatoria para el despliegue del SGB. La estrategia propuesta adopta una arquitectura Azure Enterprise orientada a seguridad, operacion, trazabilidad y transferencia de control a INCABIDE. No se plantea Azure como un servidor en la nube, sino como una plataforma gobernada que integra red, identidad, contenedores, base de datos, almacenamiento, secretos, monitoreo, backups y recuperacion.
 
-## Estrategia
+## Arquitectura objetivo
 
-La estrategia Azure se basa en servicios nativos y controles Enterprise:
+La arquitectura Azure recomendada se compone de:
 
-- Microsoft Entra ID para identidad, MFA y RBAC.
-- Azure Virtual Network con subredes segmentadas.
-- Private Endpoints para servicios de datos.
-- WAF, Firewall, NSG y VPN/Bastion para proteccion de red y acceso.
-- Plataforma de contenedores validada para ejecutar Docker.
-- Azure Database for PostgreSQL compatible con PostGIS/unaccent.
-- Blob Storage para medios y documentos.
-- Key Vault y Managed Identity para secretos.
-- Azure Monitor, Application Insights, Log Analytics y Defender for Cloud.
-- Backup, Recovery y DRP.
+- Microsoft Entra ID para identidad, MFA y RBAC;
+- Azure Virtual Network con subredes segmentadas;
+- Azure Front Door WAF y/o Application Gateway WAF para proteccion web;
+- Azure Firewall y NSG para control de trafico;
+- VPN Gateway o Bastion para administracion segura;
+- Azure Container Apps o alternativa validada para ejecutar contenedores;
+- Azure Container Registry para imagenes privadas;
+- Azure Database for PostgreSQL Flexible Server con PostGIS y unaccent, sujeto a validacion;
+- Azure Blob Storage para documentos y multimedia;
+- Azure Key Vault y Managed Identity para secretos;
+- Azure Monitor, Application Insights, Log Analytics y Defender for Cloud;
+- politicas de backup, restore test y DRP.
 
-## Relacion con la RFP
+## Red y seguridad
 
-La RFP exige Microsoft Azure, computo para contenedores, PostgreSQL 14+ o equivalente, almacenamiento, dominio personalizado, TLS, WAF, DDoS, VPN, MFA, monitoreo, backups y DRP.
+La red debe separar entrada, aplicacion, datos, endpoints privados, administracion y firewall. Los servicios de datos —PostgreSQL, Storage y Key Vault— deben exponerse preferiblemente mediante Private Endpoints, reduciendo exposicion publica. Los accesos administrativos deben realizarse por VPN, Bastion o mecanismo seguro aprobado, evitando puertos administrativos abiertos a Internet.
 
-## Requisitos cubiertos
+## Alta disponibilidad y continuidad
 
-- AZ-001 a AZ-015.
-- SEC-010 a SEC-038.
-- QA-007 a QA-012.
-- COST-017 como base para estimacion posterior, sin precios.
+La arquitectura permite aplicar alta disponibilidad por capas: entrada, aplicacion, base de datos, almacenamiento y monitoreo. El nivel final depende de RTO, RPO, region, presupuesto y criticidad acordada con INCABIDE/PADF. La base minima debe incluir backups automaticos cifrados, prueba de restauracion y plan de recuperacion ante desastres.
 
-## Evidencias necesarias
+## Decisiones pendientes de validacion
 
-- Arquitectura implementada.
-- Evidencias de configuracion.
-- TLS activo.
-- Backups restaurables.
-- Accesos verificados.
+Algunas decisiones no pueden cerrarse sin validacion de PADF/INCABIDE:
 
-## Dependencias
+- region Azure;
+- tenant y suscripcion;
+- ambientes requeridos;
+- Container Apps vs VM Docker si PADF exige una lectura literal del componente VM;
+- WAF unico o doble capa;
+- DDoS Basic vs Standard;
+- VPN Gateway vs Bastion;
+- RTO/RPO;
+- retencion de logs y backups;
+- volumen de datos y multimedia.
 
-- Region y tenant.
-- Suscripcion Azure.
-- DNS.
-- Nivel HA/DR.
-- Volumen de datos y usuarios.
+Estas decisiones deben mantenerse explicitas para evitar compromisos prematuros.
 
-## Pendientes de informacion de Justech
+## Trazabilidad RFP
 
-- Capacidad Azure real.
-- Certificaciones Microsoft reales.
-- Partner/designaciones reales si existen.
-- Herramientas de monitoreo/operacion usadas por Justech.
+Este capitulo cubre AZ-001 a AZ-015, SEC-010 a SEC-038, QA-007 a QA-012 y los requerimientos de estimacion de infraestructura Azure sin incluir precios.
+
+## Informacion pendiente de Justech
+
+Justech debe confirmar:
+
+- experiencia real en Azure;
+- certificaciones Microsoft/Azure reales, si existen;
+- herramientas de monitoreo y operacion;
+- capacidad de administrar infraestructura cloud por un ano;
+- postura sobre costos, soporte y transferencia de suscripcion.

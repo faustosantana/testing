@@ -1,48 +1,44 @@
 # 15 — CHANGE MANAGEMENT
 
-## Objetivo
+## Enfoque de gestion del cambio
 
-Describir como se gestionara la adopcion institucional del SGB modernizado.
+La adaptacion del SGB implica cambios visibles y operativos para INCABIDE: nueva identidad visual, terminologia dominicana, despliegue en nube, controles de seguridad, gestion documental, flujos de aprobacion, reportes y nuevos modulos. La gestion del cambio debe asegurar que estos elementos sean comprendidos, validados y adoptados por los usuarios correspondientes.
 
-## Enfoque
+## Cambio visual y terminologico
 
-La gestion del cambio debe cubrir:
+La RFP incluye una tabla de equivalencias terminologicas que debe aplicarse en interfaz y reportes, sin redefinir juridicamente los conceptos. Estos cambios deben ser validados por el area legal de INCABIDE antes de implementarse. La propuesta debe tratar esta actividad como un control funcional e institucional, no como un simple reemplazo de textos.
 
-- cambio de identidad visual;
-- adaptacion terminologica;
-- adopcion de flujos digitales;
-- uso de roles y permisos;
-- capacitacion;
-- comunicacion de cambios;
-- soporte inicial;
-- retroalimentacion.
+## Adopcion de usuarios
 
-## Relacion con la RFP
+Los usuarios del SGB tendran necesidades distintas:
 
-La RFP exige personalizacion visual y terminologica, validacion legal de terminos, transferencia de conocimiento y manuales por modulo.
+- la Direccion requiere visibilidad ejecutiva;
+- operadores requieren flujos claros de registro y custodia;
+- gerentes requieren alertas, aprobaciones y reportes;
+- auditores requieren trazabilidad;
+- administradores requieren control de roles, catalogos y configuracion;
+- TI requiere procedimientos y monitoreo.
 
-## Requisitos cubiertos
+La adopcion debe apoyarse en manuales, capacitacion, ayuda contextual, soporte inicial y flujos consistentes.
 
-- FUNC-001 a FUNC-006 relacionados con branding/terminologia.
-- CAP-001 a CAP-004.
-- DOC-010, DOC-016.
-- QA-005/QA-006.
+## Comunicacion de cambios
 
-## Evidencias necesarias
+Cada cambio relevante debe comunicarse con claridad: que cambia, a quien afecta, desde cuando aplica, que accion debe tomar el usuario y donde obtener soporte. Esto es especialmente importante para cambios de terminologia, roles, permisos, reportes y procesos de aprobacion.
 
-- Tabla de mapeo terminologico firmada.
-- Materiales de capacitacion.
-- Manuales.
-- Actas de validacion.
+## Experiencia de producto
 
-## Dependencias
+El SGB no debe sentirse como un ERP tradicional. Debe presentar una experiencia moderna, clara y de baja friccion. Cada pantalla debe facilitar la siguiente accion, reducir errores, evitar saturacion de informacion y permitir al usuario entender el flujo sin capacitacion excesiva.
 
-- Linea grafica INCABIDE.
-- Validacion legal de terminologia.
-- Usuarios clave disponibles.
+## Trazabilidad RFP
 
-## Pendientes de informacion de Justech
+Este capitulo cubre los requisitos de personalizacion visual y terminologica, CAP-001 a CAP-004, DOC-010, DOC-016 y requisitos de UX vinculados a mockups/prototipos validados en Etapa II.
 
-- Experiencia real en adopcion/cambio.
-- Plantillas de comunicacion.
-- Equipo funcional/UX asignado.
+## Informacion pendiente de Justech
+
+Justech debe confirmar:
+
+- experiencia real en gestion del cambio;
+- recursos funcionales/UX asignados;
+- plantillas de comunicacion;
+- materiales de adopcion;
+- enfoque de soporte inicial a usuarios.

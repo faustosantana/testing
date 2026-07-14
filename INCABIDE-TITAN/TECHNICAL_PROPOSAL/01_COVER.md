@@ -1,49 +1,38 @@
-# 01 — COVER
+# OFERTA TECNICA
 
-## Objetivo
+## Adaptacion del Sistema de Gestion de Bienes (SGB) para INCABIDE
 
-Establecer la portada controlada de la Oferta Tecnica de Justech SRL para la RFP No. 5801 DRC3P de PADF / INCABIDE.
+**RFP No. 5801 DRC3P**  
+**Entidad convocante:** Fundacion Panamericana para el Desarrollo (PADF)  
+**Beneficiario final:** Instituto de Custodia y Administracion de Bienes Incautados, Decomisados y en Extincion de Dominio (INCABIDE)  
+**Proponente:** Justech SRL  
+**Moneda del proceso:** Dolares estadounidenses (USD), segun RFP, sin incluir valores economicos en este documento tecnico  
+**Modalidad contractual indicada en la RFP:** Precio fijo  
 
-## Contenido propuesto
+---
+
+## Control documental
 
 | Campo | Valor |
 | --- | --- |
 | Documento | Oferta Tecnica |
-| Proyecto | Adaptacion del Sistema de Gestion de Bienes (SGB) para INCABIDE |
-| RFP | No. 5801 DRC3P |
-| Entidad convocante | PADF |
-| Beneficiario final | INCABIDE - Republica Dominicana |
-| Proponente | Justech SRL |
-| Version | Borrador tecnico |
-| Fecha | PENDIENTE DE VALIDACION |
+| Version | Version final para revision interna |
+| Fecha | PENDIENTE DE COMPLETAR POR JUSTECH |
+| Representante autorizado | PENDIENTE DE COMPLETAR POR JUSTECH |
+| Contacto principal | PENDIENTE DE COMPLETAR POR JUSTECH |
+| Correo electronico | PENDIENTE DE COMPLETAR POR JUSTECH |
+| Telefono / WhatsApp | PENDIENTE DE COMPLETAR POR JUSTECH |
 
-## Relacion con la RFP
+---
 
-La RFP exige presentar `Archivo No. 2: Oferta Tecnica [nombre proveedor]`, segun los terminos del Anexo No. 2.
+## Declaracion de alcance de este documento
 
-## Requisitos cubiertos
+Este documento contiene la propuesta tecnica de Justech SRL para la adaptacion, personalizacion, despliegue, aseguramiento, documentacion, transferencia y evolucion modular del Sistema de Gestion de Bienes (SGB) de INCABIDE, conforme a la Solicitud de Propuesta RFP No. 5801 DRC3P y sus anexos.
 
-- DOC-002: Archivo No. 2 Oferta Tecnica.
-- DOC-006: Propuesta estructurada en Etapa I y Etapa II.
-- ADM-001: Uso de identificador RFP No. 5801 DRC3P.
+La oferta economica, los antecedentes legales, el portafolio de referencias y las hojas de vida del equipo clave deben presentarse como archivos separados, de acuerdo con las instrucciones de la RFP.
 
-## Evidencias necesarias
+---
 
-- Nombre legal exacto de Justech SRL.
-- Datos de representante autorizado.
-- Version final aprobada.
-- Fecha de emision.
+## Confidencialidad
 
-## Dependencias
-
-- Confirmacion de datos corporativos.
-- Revision legal/formal.
-
-## Pendientes de informacion de Justech
-
-- Nombre legal completo.
-- Logo autorizado.
-- Direccion.
-- Sitio web.
-- Contacto principal.
-- Representante firmante.
+La informacion contenida en esta Oferta Tecnica se prepara exclusivamente para la evaluacion de PADF e INCABIDE en el marco de la RFP No. 5801 DRC3P. Su uso, reproduccion o distribucion debe ajustarse a las condiciones de confidencialidad del proceso.

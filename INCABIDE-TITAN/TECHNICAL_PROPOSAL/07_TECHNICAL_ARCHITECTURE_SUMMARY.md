@@ -1,52 +1,50 @@
 # 07 — TECHNICAL ARCHITECTURE SUMMARY
 
-## Objetivo
+## Arquitectura tecnica propuesta
 
-Resumir la arquitectura tecnica de la solucion, alineada con el Solution Blueprint y Azure Enterprise Architecture.
+La arquitectura tecnica propuesta organiza el SGB en capas desacopladas, seguras y operables. El objetivo es permitir que el sistema existente evolucione desde una aplicacion Django/Python hacia una plataforma institucional moderna, desplegada en Microsoft Azure, con datos protegidos, documentos gestionados, API funcional, monitoreo, backups y capacidad de crecimiento modular.
 
-## Arquitectura resumida
+La arquitectura se compone de:
 
-La solucion se organiza en capas:
+- **Capa de experiencia:** interfaz web para direccion, operadores, gerentes, auditores y administradores.
+- **Capa aplicativa:** SGB basado en Django/Python, con modulos existentes adaptados y modulos nuevos en Etapa II.
+- **Capa de API:** servicios controlados para interoperabilidad del SGB, con alcance minimo pendiente de validacion.
+- **Capa de datos:** PostgreSQL 14+ con PostGIS y unaccent como motor preferido.
+- **Capa documental:** almacenamiento de documentos, imagenes, videos y evidencias.
+- **Capa de seguridad:** identidad, permisos, MFA, cifrado, WAF, VPN, secretos y auditoria.
+- **Capa de operacion:** monitoreo, logs, alertas, backups, DRP y soporte.
 
-- experiencia web SGB;
-- aplicacion Django/Python;
-- API funcional del SGB;
-- PostgreSQL 14+ con PostGIS/unaccent;
-- almacenamiento de medios;
-- seguridad e identidad;
-- monitoreo y auditoria;
-- backups y recuperacion;
-- integraciones externas controladas.
+## Flujo tecnico de alto nivel
 
-## Relacion con la RFP
+Un usuario autorizado accede al sistema mediante dominio institucional con TLS. La solicitud pasa por controles de entrada y WAF antes de alcanzar la aplicacion contenerizada. La aplicacion consulta PostgreSQL por canal controlado, accede a documentos en almacenamiento seguro, obtiene secretos mediante Key Vault o mecanismo equivalente, registra eventos en auditoria y envia metricas/logs a la plataforma de observabilidad.
 
-Responde al requerimiento de desplegar el SGB sobre una plataforma tecnologica segura, moderna y escalable, con Azure como plataforma obligatoria.
+## API e interoperabilidad
 
-## Requisitos cubiertos
+La RFP exige una API funcional del SGB, interoperable con sistemas externos. Esta propuesta distingue entre:
 
-- TEC-001 a TEC-026.
-- AZ-001 a AZ-015.
-- SEC-003 a SEC-038.
-- QA-004 a QA-012.
+- **API base del SGB:** entregable obligatorio, diseñada para INCABIDE y validada en produccion.
+- **Interconexion con PGR:** item independiente y opcional, dependiente de aprobacion de la Procuraduria General de la Republica, sin fecha fija ni penalidad atribuible al proveedor, conforme a la RFP.
 
-## Evidencias necesarias
+Esta separacion protege alcance, cronograma, costo y responsabilidades.
 
-- Diagrama de arquitectura implementada.
-- Componentes activos y documentados.
-- Credenciales entregadas de forma segura.
-- API validada.
-- Certificado TLS.
+## Datos y almacenamiento
 
-## Dependencias
+La base de datos transaccional debe preservar compatibilidad con PostgreSQL 14+ y extensiones PostGIS/unaccent. Los documentos y archivos multimedia no deben tratarse como simples adjuntos sin gobierno; deben almacenarse con metadatos, clasificacion, permisos, auditoria y relacion directa con expedientes, bienes, contratos o procesos de disposicion.
 
-- Region Azure.
-- Tenant/suscripcion.
-- Modelo de computo.
-- Ambientes.
-- RTO/RPO.
+## Observabilidad y operacion
 
-## Pendientes de informacion de Justech
+La arquitectura incorpora monitoreo y alertas desde el diseno. El sistema debe registrar errores, accesos, eventos funcionales, actividad administrativa, exportaciones, cambios de permisos y eventos de seguridad. Esta informacion permite soporte, auditoria, continuidad y mejora continua.
 
-- Arquitectos asignados.
-- Experiencia real en arquitectura Azure.
-- Certificaciones reales disponibles.
+## Trazabilidad RFP
+
+Este capitulo cubre TEC-001 a TEC-026, AZ-001 a AZ-015, SEC-003 a SEC-038 y QA-004 a QA-012.
+
+## Informacion pendiente de Justech
+
+Justech debe confirmar:
+
+- arquitectos asignados;
+- experiencia real con Django/Python, PostgreSQL y Azure;
+- herramientas de observabilidad usadas;
+- enfoque de API y documentacion tecnica;
+- certificaciones reales si seran incluidas.

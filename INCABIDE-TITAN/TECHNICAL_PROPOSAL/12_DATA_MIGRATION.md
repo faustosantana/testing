@@ -1,51 +1,70 @@
 # 12 — DATA MIGRATION
 
-## Objetivo
+## Enfoque de datos
 
-Definir el enfoque de migracion o carga de datos, manteniendo como pendiente cualquier alcance no especificado por la RFP.
+El SGB debe operar sobre informacion estructurada, documentos, evidencia multimedia y datos geoespaciales. La RFP identifica PostgreSQL 14+ con PostGIS y unaccent como base tecnologica del sistema, y solicita funciones de importacion/exportacion masiva, documentacion multimedia, geolocalizacion y reportes para toma de decisiones. Sin embargo, la RFP no define de forma explicita una migracion historica completa ni proporciona volumen de datos, calidad de datos, estructura de fuentes actuales o cantidad de archivos existentes.
 
-## Enfoque
+Por esa razon, la propuesta tecnica adopta un enfoque responsable: contempla una estrategia de migracion condicionada a la confirmacion de fuentes, volumen, calidad y alcance por parte de PADF/INCABIDE. No se debe comprometer una migracion historica completa sin informacion suficiente.
 
-La RFP no define explicitamente volumen ni existencia de datos historicos a migrar. Por tanto, la propuesta debe contemplar una estrategia condicionada:
+## Estrategia de migracion condicionada
 
-1. inventario de fuentes;
-2. perfilamiento de datos;
-3. mapeo al modelo SGB;
-4. validacion de calidad;
-5. carga de prueba;
-6. validacion funcional;
-7. carga controlada;
-8. reconciliacion;
-9. evidencia de aprobacion.
+Si PADF/INCABIDE confirma la existencia de datos a migrar, el proceso debera ejecutarse en fases:
 
-## Relacion con la RFP
+1. inventario de fuentes de datos;
+2. perfilamiento de calidad;
+3. identificacion de catalogos maestros;
+4. mapeo de campos hacia el modelo del SGB;
+5. reglas de transformacion y limpieza;
+6. carga de prueba;
+7. reporte de errores;
+8. validacion funcional;
+9. carga controlada;
+10. reconciliacion y aprobacion.
 
-La RFP exige importacion/exportacion masiva, documentacion multimedia, geolocalizacion, datos de activos y almacenamiento seguro. No define migracion historica completa.
+## Gobierno de datos
 
-## Requisitos cubiertos
+La solucion debe usar catalogos controlados para provincias, municipios, entidades remitentes, categorias, subcategorias, estados, roles y otros valores estructurados. Esto reduce errores de digitacion, mejora busqueda y soporta reportes confiables.
 
-- FUNC-170 a FUNC-178.
-- FUNC-151 a FUNC-160.
-- FUNC-001 a FUNC-021.
-- SEC-003 a SEC-009.
+Los datos sensibles deben gestionarse bajo principios de minimizacion, control de acceso, auditoria y confidencialidad. Los documentos y multimedia deben contar con metadatos, clasificacion, relacion con expediente, control de permisos y trazabilidad de carga o descarga.
 
-## Evidencias necesarias
+## Importacion y exportacion
 
-- Inventario de datos.
-- Mapeo de campos.
-- Resultado de carga de prueba.
-- Reporte de errores.
-- Validacion INCABIDE.
+La RFP solicita compatibilidad con importacion/exportacion masiva en formatos como CSV, Excel y PDF, con validacion, mapeo, manejo de errores, transferencia segura y auditoria. La propuesta debe contemplar mecanismos para:
 
-## Dependencias
+- validar formatos;
+- detectar errores;
+- controlar duplicados;
+- registrar usuario y fecha;
+- auditar exportaciones;
+- aplicar permisos;
+- generar reportes de carga.
 
-- Confirmacion de existencia de base actual.
-- Volumen de registros y archivos.
-- Calidad de datos.
-- Catalogos oficiales.
+## Geolocalizacion
 
-## Pendientes de informacion de Justech
+La plataforma debe permitir representar ubicacion de activos en territorio dominicano, ya sea mediante provincia, municipio, referencia catastral, direccion o coordenadas, segun corresponda al tipo de bien. El proveedor de mapas, licencias, precision y fuentes oficiales deben validarse antes de comprometer una implementacion final.
 
-- Experiencia real en migraciones.
-- Herramientas de migracion usadas.
-- Equipo o rol responsable de datos.
+## Trazabilidad RFP
+
+Este capitulo cubre FUNC-001 a FUNC-021, FUNC-151 a FUNC-191, SEC-003 a SEC-009, DOC-009, DOC-015 y requisitos de importacion/exportacion, multimedia y geolocalizacion.
+
+## Informacion pendiente de Justech
+
+Justech debe confirmar:
+
+- experiencia real en migracion de datos;
+- herramientas de migracion disponibles;
+- equipo responsable de datos;
+- experiencia en PostgreSQL/PostGIS;
+- capacidad de manejar importaciones/exportaciones seguras.
+
+## Informacion pendiente de PADF/INCABIDE
+
+Se requiere confirmar:
+
+- existencia de base de datos productiva actual;
+- volumen de registros;
+- volumen y tipo de documentos/multimedia;
+- catalogos oficiales;
+- calidad de datos;
+- alcance de migracion historica;
+- responsables de validacion de datos.

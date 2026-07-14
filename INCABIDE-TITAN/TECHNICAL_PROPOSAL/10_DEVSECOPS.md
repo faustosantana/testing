@@ -1,52 +1,60 @@
 # 10 — DEVSECOPS
 
-## Objetivo
+## Enfoque DevSecOps
 
-Definir el enfoque DevSecOps para entregar cambios seguros, versionados, verificables y con evidencias.
+El enfoque DevSecOps tiene como objetivo asegurar que cada cambio al SGB sea versionado, revisado, probado, escaneado, desplegado de forma controlada y documentado con evidencias. Dado que la RFP exige codigo fuente en repositorio Git, contenedores, seguridad, ausencia de credenciales en codigo y evidencias de despliegue, el proceso de entrega debe integrar controles tecnicos desde el inicio.
 
-## Enfoque
+## Flujo de entrega
 
-El enfoque DevSecOps contempla:
+El flujo recomendado para cambios y releases es:
 
-- control de versiones;
-- revision de codigo;
-- escaneo de secretos;
-- analisis de dependencias;
-- analisis de vulnerabilidades;
-- build de imagenes;
-- escaneo de contenedores;
-- despliegues controlados;
-- evidencias por release;
-- rollback documentado.
+1. gestion de codigo en repositorio Git;
+2. rama o unidad de trabajo controlada;
+3. revision tecnica;
+4. analisis de dependencias;
+5. escaneo de secretos;
+6. analisis de vulnerabilidades;
+7. construccion de imagen de contenedor;
+8. escaneo de imagen;
+9. despliegue en ambiente no productivo;
+10. pruebas funcionales y de seguridad;
+11. aprobacion;
+12. despliegue productivo controlado;
+13. monitoreo y registro de evidencias.
 
-## Relacion con la RFP
+## Control de configuracion
 
-La RFP exige codigo fuente entregado en Git, Dockerfile/Docker Compose, escaneos de seguridad, ausencia de credenciales en codigo, evidencias de despliegue y documentacion tecnica.
+Las configuraciones sensibles no deben residir en el codigo fuente ni en archivos versionados. La solucion debe usar variables de entorno, vault de secretos o mecanismos equivalentes aprobados para credenciales, llaves, tokens y cadenas de conexion. Este control responde directamente al requisito de gestion segura de credenciales de la RFP.
 
-## Requisitos cubiertos
+## Seguridad de dependencias
 
-- TEC-019 a TEC-023.
-- SEC-019, SEC-021, SEC-024, SEC-029, SEC-034.
-- QA-010, QA-011, QA-013.
-- DOC-006/DOC-017.
+El SGB debe mantener inventario de librerias y licencias open source. Las dependencias incompatibles o vulnerables identificadas durante el diagnostico deben actualizarse, reemplazarse o adaptarse. No deben incorporarse componentes con licencias incompatibles con los fines del proyecto.
 
-## Evidencias necesarias
+## Evidencias DevSecOps
 
-- Historial de commits.
-- Resultados de escaneo.
-- Inventario de dependencias.
-- Evidencia de build/despliegue.
-- Notas de version.
+Las evidencias esperadas incluyen:
 
-## Dependencias
+- historial de commits;
+- registro de revisiones;
+- inventario de dependencias;
+- resultados de escaneos;
+- evidencias de build;
+- tags o versiones;
+- notas de release;
+- evidencias de despliegue;
+- plan de rollback cuando aplique.
 
-- Repositorio Git designado por INCABIDE.
-- Herramienta CI/CD aprobada.
-- Acceso a infraestructura.
+## Trazabilidad RFP
 
-## Pendientes de informacion de Justech
+Este capitulo cubre TEC-019 a TEC-023, SEC-019, SEC-021, SEC-024, SEC-029, SEC-034, DOC-017 y requisitos de entrega de codigo en Git.
 
-- Plataforma DevSecOps usada.
-- Politicas de ramas y revisiones.
-- Herramientas SAST/DAST/secret scan.
-- Capacidad de generar SBOM si se requiere.
+## Informacion pendiente de Justech
+
+Justech debe confirmar:
+
+- herramienta de repositorio y flujo de ramas;
+- herramientas CI/CD;
+- herramientas SAST/DAST/secret scan;
+- herramientas de escaneo de contenedores;
+- capacidad de generar SBOM;
+- politicas internas de revision y aprobacion de cambios.
