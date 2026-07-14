@@ -21,7 +21,7 @@ Ultima actualizacion: Dia 5 - Oferta Tecnica modular en construccion
 | Design Differentiators | 45 |
 | Documentos Solution Story | 21 |
 | Documentos Azure Enterprise | 28 |
-| Documentos Technical Proposal | 22 |
+| Documentos Technical Proposal | 24 |
 
 ## Documentos pendientes
 
@@ -36,6 +36,8 @@ Ultima actualizacion: Dia 5 - Oferta Tecnica modular en construccion
 | Solution Story | SOLUTION_STORY | Bid Manager / CTO | Completado base | Dia 3 |
 | Azure Enterprise Architecture | AZURE_ENTERPRISE | Arquitecto Azure | Completado base | Dia 4 |
 | Oferta tecnica modular | TECHNICAL_PROPOSAL | Lider propuesta | Borrador base | Dia 5 |
+| Master Technical Proposal Outline | TECHNICAL_PROPOSAL | Bid Manager / CTO | Definitivo base | Dia 5 |
+| Win Strategy interna | TECHNICAL_PROPOSAL | Bid Manager | Borrador interno | Dia 5 |
 | Informacion faltante Justech | TECHNICAL_PROPOSAL | Bid Manager | Identificada | Dia 5 |
 | Oferta tecnica final compilada | 03_PROPOSAL | Lider propuesta | Pendiente revision | Dia 5 |
 | Oferta economica | 07_COSTS | Lider comercial | Pendiente | Dia 3 |
@@ -87,6 +89,7 @@ Ultima actualizacion: Dia 5 - Oferta Tecnica modular en construccion
 | DEC-009 | Adoptar ciclo de mejora continua y filosofia Enterprise moderna, no ERP | Dia 4 | QA Manager / UX Lead / CTO | docs/CONTINUOUS_IMPROVEMENT_CYCLE.md |
 | DEC-010 | Construir Oferta Tecnica en documentos modulares, sin inventar informacion corporativa | Dia 5 | Bid Manager / CTO | TECHNICAL_PROPOSAL/README.md |
 | DEC-011 | Adoptar critica tecnica obligatoria antes de cualquier fase o trabajo nuevo | Dia 5 | Technical Delivery Manager / Principal Architect / QA Lead | docs/TECHNICAL_CRITICAL_REVIEW_RULE.md |
+| DEC-012 | Usar MASTER_TECHNICAL_PROPOSAL_OUTLINE como indice rector antes de redactar capitulos | Dia 5 | Bid Manager / CTO | TECHNICAL_PROPOSAL/MASTER_TECHNICAL_PROPOSAL_OUTLINE.md |
 
 ## Bloqueos
 
