@@ -21,7 +21,7 @@ Ultima actualizacion: Dia 5 - Oferta Tecnica modular en construccion
 | Design Differentiators | 45 |
 | Documentos Solution Story | 21 |
 | Documentos Azure Enterprise | 28 |
-| Documentos Technical Proposal | 24 |
+| Documentos Technical Proposal | 25 |
 
 ## Documentos pendientes
 
@@ -37,6 +37,7 @@ Ultima actualizacion: Dia 5 - Oferta Tecnica modular en construccion
 | Azure Enterprise Architecture | AZURE_ENTERPRISE | Arquitecto Azure | Completado base | Dia 4 |
 | Oferta tecnica modular | TECHNICAL_PROPOSAL | Lider propuesta | Borrador base | Dia 5 |
 | Master Technical Proposal Outline | TECHNICAL_PROPOSAL | Bid Manager / CTO | Definitivo base | Dia 5 |
+| Committee Review Simulation | TECHNICAL_PROPOSAL | Bid Manager / QA Lead / CTO | Borrador interno | Dia 5 |
 | Win Strategy interna | TECHNICAL_PROPOSAL | Bid Manager | Borrador interno | Dia 5 |
 | Informacion faltante Justech | TECHNICAL_PROPOSAL | Bid Manager | Identificada | Dia 5 |
 | Oferta tecnica final compilada | 03_PROPOSAL | Lider propuesta | Pendiente revision | Dia 5 |
