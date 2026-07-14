@@ -20,7 +20,7 @@ Ultima actualizacion: Dia 5 - Oferta Tecnica modular en construccion
 | Documentos UX Master | 25 |
 | Design Differentiators | 45 |
 | Documentos Solution Story | 21 |
-| Documentos Azure Enterprise | 28 |
+| Documentos Azure Enterprise | 32 |
 | Documentos Technical Proposal | 25 |
 
 ## Documentos pendientes
@@ -35,6 +35,7 @@ Ultima actualizacion: Dia 5 - Oferta Tecnica modular en construccion
 | UX Master Design | UX_MASTER | UX/UI Lead | Completado base | Dia 3 |
 | Solution Story | SOLUTION_STORY | Bid Manager / CTO | Completado base | Dia 3 |
 | Azure Enterprise Architecture | AZURE_ENTERPRISE | Arquitecto Azure | Completado base | Dia 4 |
+| Azure Architecture proposal-ready | AZURE_ENTERPRISE | Arquitecto Azure | Completado base | Dia 6 |
 | Oferta tecnica modular | TECHNICAL_PROPOSAL | Lider propuesta | Borrador base | Dia 5 |
 | Master Technical Proposal Outline | TECHNICAL_PROPOSAL | Bid Manager / CTO | Definitivo base | Dia 5 |
 | Committee Review Simulation | TECHNICAL_PROPOSAL | Bid Manager / QA Lead / CTO | Borrador interno | Dia 5 |
@@ -91,6 +92,7 @@ Ultima actualizacion: Dia 5 - Oferta Tecnica modular en construccion
 | DEC-010 | Construir Oferta Tecnica en documentos modulares, sin inventar informacion corporativa | Dia 5 | Bid Manager / CTO | TECHNICAL_PROPOSAL/README.md |
 | DEC-011 | Adoptar critica tecnica obligatoria antes de cualquier fase o trabajo nuevo | Dia 5 | Technical Delivery Manager / Principal Architect / QA Lead | docs/TECHNICAL_CRITICAL_REVIEW_RULE.md |
 | DEC-012 | Usar MASTER_TECHNICAL_PROPOSAL_OUTLINE como indice rector antes de redactar capitulos | Dia 5 | Bid Manager / CTO | TECHNICAL_PROPOSAL/MASTER_TECHNICAL_PROPOSAL_OUTLINE.md |
+| DEC-013 | Generar arquitectura Azure definitiva con diagramas Mermaid, sin IaC ni despliegue | Dia 6 | Arquitecto Azure / Principal Architect | AZURE_ENTERPRISE/25_DEFINITIVE_AZURE_ARCHITECTURE.md |
 
 ## Bloqueos
 
