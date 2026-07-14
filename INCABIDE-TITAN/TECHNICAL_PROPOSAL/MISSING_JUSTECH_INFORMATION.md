@@ -6,8 +6,8 @@ Listar toda la informacion corporativa, tecnica, legal y operativa que Justech d
 
 ## Informacion corporativa
 
-- Historia de Justech SRL.
-- Ano de fundacion.
+- Historia extendida de Justech SRL.
+- Ano de fundacion. CONFIRMADO: 2018.
 - Perfil corporativo.
 - Mision, vision y valores.
 - Direccion legal.
@@ -20,6 +20,7 @@ Listar toda la informacion corporativa, tecnica, legal y operativa que Justech d
 - Telefono/WhatsApp institucional.
 - Correo institucional de contacto.
 - Logo oficial y lineamientos de marca.
+- Cantidad de colaboradores. CONFIRMADO: 14.
 
 ## Documentacion legal
 
@@ -52,6 +53,7 @@ Listar toda la informacion corporativa, tecnica, legal y operativa que Justech d
 - Experiencia en PostgreSQL/PostGIS, si existe.
 - Experiencia en Azure, si existe.
 - Experiencia en DevSecOps, si existe.
+- Experiencia confirmada por Fausto registrada en `RELEVANT_EXPERIENCE.md`.
 
 ## Certificaciones y alianzas
 
@@ -68,10 +70,12 @@ Listar toda la informacion corporativa, tecnica, legal y operativa que Justech d
 - Certificaciones de seguridad.
 - Certificaciones de calidad.
 - Otras certificaciones relevantes.
+- Partners confirmados por Fausto registrados en `PARTNERS_AND_CERTIFICATIONS.md`.
 
 ## Equipo propuesto
 
-- Lider de Proyecto con PMP.
+- Equipo nominal confirmado por Fausto registrado en `PROJECT_TEAM.md`.
+- Lider de Proyecto con PMP. PENDIENTE: confirmar PMP y correspondencia con rol.
 - Desarrollador Senior Backend Python/Django.
 - Especialista DevOps/Seguridad.
 - Arquitecto Azure.

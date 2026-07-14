@@ -21,7 +21,7 @@ Ultima actualizacion: Dia 5 - Oferta Tecnica modular en construccion
 | Design Differentiators | 45 |
 | Documentos Solution Story | 21 |
 | Documentos Azure Enterprise | 32 |
-| Documentos Technical Proposal | 25 |
+| Documentos Technical Proposal | 30 |
 | Demo Master Plan | 1 |
 | Presentation Storyboard | 1 |
 
@@ -45,6 +45,7 @@ Ultima actualizacion: Dia 5 - Oferta Tecnica modular en construccion
 | Committee Review Simulation | TECHNICAL_PROPOSAL | Bid Manager / QA Lead / CTO | Borrador interno | Dia 5 |
 | Win Strategy interna | TECHNICAL_PROPOSAL | Bid Manager | Borrador interno | Dia 5 |
 | Informacion faltante Justech | TECHNICAL_PROPOSAL | Bid Manager | Identificada | Dia 5 |
+| Informacion corporativa Justech confirmada | TECHNICAL_PROPOSAL | Bid Manager | Integrada parcialmente | Dia 8 |
 | Oferta tecnica final compilada | 03_PROPOSAL | Lider propuesta | Pendiente revision | Dia 5 |
 | Oferta economica | 07_COSTS | Lider comercial | Pendiente | Dia 3 |
 | Paquete legal | 10_LEGAL | Responsable legal | Pendiente | Dia 4 |
@@ -77,7 +78,7 @@ Ultima actualizacion: Dia 5 - Oferta Tecnica modular en construccion
 | ISS-001 | Codigo fuente no disponible antes de adjudicacion | Critico | CTO | Abierto |
 | ISS-002 | Alcance minimo de API no definido | Critico | Arquitecto Django | Abierto |
 | ISS-003 | Region, tenant, ambientes y dimensionamiento Azure no definidos | Critico | Arquitecto Azure | Abierto |
-| ISS-004 | Equipo, certificaciones y referencias reales pendientes de confirmar | Alto | PMO / Bid Manager | Abierto |
+| ISS-004 | CVs, certificaciones, PMP y referencias reales pendientes de confirmar | Alto | PMO / Bid Manager | Abierto |
 | ISS-005 | Soporte critico fuera de horario ambiguo frente a 30 horas anuales | Alto | Service Manager | Abierto |
 
 ## Decisiones tomadas
@@ -99,6 +100,7 @@ Ultima actualizacion: Dia 5 - Oferta Tecnica modular en construccion
 | DEC-013 | Generar arquitectura Azure definitiva con diagramas Mermaid, sin IaC ni despliegue | Dia 6 | Arquitecto Azure / Principal Architect | AZURE_ENTERPRISE/25_DEFINITIVE_AZURE_ARCHITECTURE.md |
 | DEC-014 | Disenar demo como historia del ciclo de vida del bien, sin desarrollar ni usar datos reales | Dia 7 | UX/UI Lead / Bid Manager | 05_DEMO/DEMO_MASTER_PLAN.md |
 | DEC-015 | Disenar presentacion como narrativa ejecutiva, sin crear PowerPoint ni imagenes | Dia 8 | Bid Manager / UX Lead | 06_PRESENTATION/PRESENTATION_MASTER_STORYBOARD.md |
+| DEC-016 | Integrar solo informacion corporativa Justech confirmada por Fausto | Dia 8 | Bid Manager | TECHNICAL_PROPOSAL/COMPANY_PROFILE.md |
 
 ## Bloqueos
 
