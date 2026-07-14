@@ -6,9 +6,9 @@ Ultima actualizacion: Dia 5 - Oferta Tecnica modular en construccion
 
 | Indicador | Valor |
 | --- | --- |
-| % completado | 80% |
-| Fase actual | Fase 7 — Demo Master Plan |
-| Estado general | Demo disenada, pendiente aprobacion antes de desarrollar |
+| % completado | 83% |
+| Fase actual | Fase 8 — Presentation Master Storyboard |
+| Estado general | Storyboard ejecutivo disenado, pendiente aprobacion antes de PowerPoint |
 | Responsable de seguimiento | PM Bid |
 | Requisitos trazables | 428 |
 | Entregables identificados | 58 |
@@ -23,6 +23,7 @@ Ultima actualizacion: Dia 5 - Oferta Tecnica modular en construccion
 | Documentos Azure Enterprise | 32 |
 | Documentos Technical Proposal | 25 |
 | Demo Master Plan | 1 |
+| Presentation Storyboard | 1 |
 
 ## Documentos pendientes
 
@@ -38,6 +39,7 @@ Ultima actualizacion: Dia 5 - Oferta Tecnica modular en construccion
 | Azure Enterprise Architecture | AZURE_ENTERPRISE | Arquitecto Azure | Completado base | Dia 4 |
 | Azure Architecture proposal-ready | AZURE_ENTERPRISE | Arquitecto Azure | Completado base | Dia 6 |
 | Demo Master Plan | 05_DEMO | UX/UI Lead / Bid Manager | Completado base | Dia 7 |
+| Presentation Master Storyboard | 06_PRESENTATION | Bid Manager / UX Lead | Completado base | Dia 8 |
 | Oferta tecnica modular | TECHNICAL_PROPOSAL | Lider propuesta | Borrador base | Dia 5 |
 | Master Technical Proposal Outline | TECHNICAL_PROPOSAL | Bid Manager / CTO | Definitivo base | Dia 5 |
 | Committee Review Simulation | TECHNICAL_PROPOSAL | Bid Manager / QA Lead / CTO | Borrador interno | Dia 5 |
@@ -96,6 +98,7 @@ Ultima actualizacion: Dia 5 - Oferta Tecnica modular en construccion
 | DEC-012 | Usar MASTER_TECHNICAL_PROPOSAL_OUTLINE como indice rector antes de redactar capitulos | Dia 5 | Bid Manager / CTO | TECHNICAL_PROPOSAL/MASTER_TECHNICAL_PROPOSAL_OUTLINE.md |
 | DEC-013 | Generar arquitectura Azure definitiva con diagramas Mermaid, sin IaC ni despliegue | Dia 6 | Arquitecto Azure / Principal Architect | AZURE_ENTERPRISE/25_DEFINITIVE_AZURE_ARCHITECTURE.md |
 | DEC-014 | Disenar demo como historia del ciclo de vida del bien, sin desarrollar ni usar datos reales | Dia 7 | UX/UI Lead / Bid Manager | 05_DEMO/DEMO_MASTER_PLAN.md |
+| DEC-015 | Disenar presentacion como narrativa ejecutiva, sin crear PowerPoint ni imagenes | Dia 8 | Bid Manager / UX Lead | 06_PRESENTATION/PRESENTATION_MASTER_STORYBOARD.md |
 
 ## Bloqueos
 
