@@ -6,9 +6,9 @@ Ultima actualizacion: Dia 5 - Oferta Tecnica modular en construccion
 
 | Indicador | Valor |
 | --- | --- |
-| % completado | 75% |
-| Fase actual | Fase 5 — Construccion de Oferta Tecnica |
-| Estado general | Oferta Tecnica modular creada, pendiente informacion Justech |
+| % completado | 80% |
+| Fase actual | Fase 7 — Demo Master Plan |
+| Estado general | Demo disenada, pendiente aprobacion antes de desarrollar |
 | Responsable de seguimiento | PM Bid |
 | Requisitos trazables | 428 |
 | Entregables identificados | 58 |
@@ -22,6 +22,7 @@ Ultima actualizacion: Dia 5 - Oferta Tecnica modular en construccion
 | Documentos Solution Story | 21 |
 | Documentos Azure Enterprise | 32 |
 | Documentos Technical Proposal | 25 |
+| Demo Master Plan | 1 |
 
 ## Documentos pendientes
 
@@ -36,6 +37,7 @@ Ultima actualizacion: Dia 5 - Oferta Tecnica modular en construccion
 | Solution Story | SOLUTION_STORY | Bid Manager / CTO | Completado base | Dia 3 |
 | Azure Enterprise Architecture | AZURE_ENTERPRISE | Arquitecto Azure | Completado base | Dia 4 |
 | Azure Architecture proposal-ready | AZURE_ENTERPRISE | Arquitecto Azure | Completado base | Dia 6 |
+| Demo Master Plan | 05_DEMO | UX/UI Lead / Bid Manager | Completado base | Dia 7 |
 | Oferta tecnica modular | TECHNICAL_PROPOSAL | Lider propuesta | Borrador base | Dia 5 |
 | Master Technical Proposal Outline | TECHNICAL_PROPOSAL | Bid Manager / CTO | Definitivo base | Dia 5 |
 | Committee Review Simulation | TECHNICAL_PROPOSAL | Bid Manager / QA Lead / CTO | Borrador interno | Dia 5 |
@@ -93,6 +95,7 @@ Ultima actualizacion: Dia 5 - Oferta Tecnica modular en construccion
 | DEC-011 | Adoptar critica tecnica obligatoria antes de cualquier fase o trabajo nuevo | Dia 5 | Technical Delivery Manager / Principal Architect / QA Lead | docs/TECHNICAL_CRITICAL_REVIEW_RULE.md |
 | DEC-012 | Usar MASTER_TECHNICAL_PROPOSAL_OUTLINE como indice rector antes de redactar capitulos | Dia 5 | Bid Manager / CTO | TECHNICAL_PROPOSAL/MASTER_TECHNICAL_PROPOSAL_OUTLINE.md |
 | DEC-013 | Generar arquitectura Azure definitiva con diagramas Mermaid, sin IaC ni despliegue | Dia 6 | Arquitecto Azure / Principal Architect | AZURE_ENTERPRISE/25_DEFINITIVE_AZURE_ARCHITECTURE.md |
+| DEC-014 | Disenar demo como historia del ciclo de vida del bien, sin desarrollar ni usar datos reales | Dia 7 | UX/UI Lead / Bid Manager | 05_DEMO/DEMO_MASTER_PLAN.md |
 
 ## Bloqueos
 
