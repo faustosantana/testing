@@ -21,7 +21,7 @@ Ultima actualizacion: Dia 5 - Oferta Tecnica modular en construccion
 | Design Differentiators | 45 |
 | Documentos Solution Story | 21 |
 | Documentos Azure Enterprise | 32 |
-| Documentos Technical Proposal | 30 |
+| Documentos Technical Proposal | 31 |
 | Demo Master Plan | 1 |
 | Presentation Storyboard | 1 |
 
@@ -46,6 +46,7 @@ Ultima actualizacion: Dia 5 - Oferta Tecnica modular en construccion
 | Win Strategy interna | TECHNICAL_PROPOSAL | Bid Manager | Borrador interno | Dia 5 |
 | Informacion faltante Justech | TECHNICAL_PROPOSAL | Bid Manager | Identificada | Dia 5 |
 | Informacion corporativa Justech confirmada | TECHNICAL_PROPOSAL | Bid Manager | Integrada parcialmente | Dia 8 |
+| Team and Governance | TECHNICAL_PROPOSAL | Bid Manager / PMO | Completado con informacion validada | Dia 8 |
 | Oferta tecnica final compilada | 03_PROPOSAL | Lider propuesta | Pendiente revision | Dia 5 |
 | Oferta economica | 07_COSTS | Lider comercial | Pendiente | Dia 3 |
 | Paquete legal | 10_LEGAL | Responsable legal | Pendiente | Dia 4 |
@@ -101,6 +102,7 @@ Ultima actualizacion: Dia 5 - Oferta Tecnica modular en construccion
 | DEC-014 | Disenar demo como historia del ciclo de vida del bien, sin desarrollar ni usar datos reales | Dia 7 | UX/UI Lead / Bid Manager | 05_DEMO/DEMO_MASTER_PLAN.md |
 | DEC-015 | Disenar presentacion como narrativa ejecutiva, sin crear PowerPoint ni imagenes | Dia 8 | Bid Manager / UX Lead | 06_PRESENTATION/PRESENTATION_MASTER_STORYBOARD.md |
 | DEC-016 | Integrar solo informacion corporativa Justech confirmada por Fausto | Dia 8 | Bid Manager | TECHNICAL_PROPOSAL/COMPANY_PROFILE.md |
+| DEC-017 | Construir Team and Governance con informacion validada por Direccion, pendiente de enriquecer con CV oficiales | Dia 8 | Bid Manager / PMO | TECHNICAL_PROPOSAL/15_TEAM_AND_GOVERNANCE.md |
 
 ## Bloqueos
 

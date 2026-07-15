@@ -8,11 +8,12 @@ Registrar el equipo de proyecto confirmado por Fausto para la Oferta Tecnica de 
 
 | Rol en el proyecto | Nombre confirmado |
 | --- | --- |
-| Director del Proyecto | Gregory Carmona |
+| Director del Proyecto / Project Manager (PMP) | Gregori Carmona |
 | Arquitecto Azure | Francisco Tavera |
-| Lider Tecnico | Jesus Gomez |
+| Technical Delivery Lead | Grismaldy Ortiz |
+| Digital Transformation Lead | Jose Duran |
 | DevOps | Jesus Alvarez |
-| QA Lead | Luis Hernandez |
+| QA Lead | Luis Daniel Hernandez |
 
 ## Relacion con la RFP
 
@@ -22,7 +23,7 @@ La RFP exige perfiles minimos obligatorios:
 - Desarrollador Senior Backend con minimo 3 anos en Python/Django o aplicaciones similares.
 - Especialista DevOps/Seguridad con minimo 1 ano de experiencia en despliegue seguro en la nube, VPN y firewalls.
 
-El equipo confirmado por Fausto cubre roles relevantes para direccion, arquitectura Azure, liderazgo tecnico, DevOps y QA. Sin embargo, aun se requiere validar documentalmente experiencia, certificaciones, CVs y correspondencia exacta con los perfiles minimos de la RFP.
+El equipo confirmado por Direccion del Proyecto cubre roles relevantes para direccion, arquitectura Azure, liderazgo tecnico, transformacion digital, DevOps y QA. Sin embargo, aun se requiere incorporar los CV oficiales para enriquecer fechas, formacion, certificaciones documentadas, dedicacion y correspondencia detallada con los perfiles minimos de la RFP.
 
 ## Informacion pendiente por cada integrante
 
@@ -42,9 +43,9 @@ Para cada miembro del equipo se requiere:
 
 | Requisito RFP | Estado |
 | --- | --- |
-| Lider de Proyecto con PMP | PENDIENTE DE VALIDACION |
+| Lider de Proyecto con PMP | Confirmado por Direccion del Proyecto: Gregori Carmona, PMP vigente. CV oficial pendiente. |
 | Backend Senior Python/Django minimo 3 anos | PENDIENTE DE VALIDACION |
-| DevOps/Seguridad con nube, VPN y firewalls | PENDIENTE DE VALIDACION |
+| DevOps/Seguridad con nube, VPN y firewalls | Cobertura parcial por roles de Arquitectura Azure y DevOps; detalle documental pendiente de CV oficial. |
 | CVs del equipo clave | PENDIENTE DE VALIDACION |
 | Certificaciones Microsoft/Azure | PENDIENTE DE VALIDACION |
 
