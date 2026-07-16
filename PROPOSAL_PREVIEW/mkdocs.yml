@@ -1,0 +1,105 @@
+site_name: "INCABIDE TITAN — Technical Proposal Preview"
+site_description: "Navegacion profesional de la propuesta tecnica RFP No. 5801 DRC3P"
+site_author: "Justech SRL"
+site_url: "http://127.0.0.1:8000/"
+
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  language: es
+  logo: assets/justech-temp-logo.svg
+  favicon: assets/justech-temp-logo.svg
+  features:
+    - navigation.instant
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.indexes
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: blue grey
+      accent: blue
+  font:
+    text: Inter
+    code: Roboto Mono
+
+plugins:
+  - search:
+      lang: es
+  - mermaid2
+  - print-site:
+      add_to_navigation: true
+      print_page_title: "Exportar / imprimir PDF"
+      add_print_site_banner: false
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      title: En esta pagina
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Inicio: index.md
+  - Propuesta Tecnica:
+      - 01 Cover: proposal/01_COVER.md
+      - 02 Executive Summary: proposal/02_EXECUTIVE_SUMMARY.md
+      - 03 Understanding of the Project: proposal/03_UNDERSTANDING_OF_THE_PROJECT.md
+      - 04 Current Challenges: proposal/04_CURRENT_CHALLENGES.md
+      - 05 Proposed Solution: proposal/05_PROPOSED_SOLUTION.md
+      - 06 Implementation Approach: proposal/06_IMPLEMENTATION_APPROACH.md
+      - 07 Technical Architecture Summary: proposal/07_TECHNICAL_ARCHITECTURE_SUMMARY.md
+      - 08 Azure Strategy: proposal/08_AZURE_STRATEGY.md
+      - 09 Security and Compliance: proposal/09_SECURITY_AND_COMPLIANCE.md
+      - 10 DevSecOps: proposal/10_DEVSECOPS.md
+      - 11 Testing and QA: proposal/11_TESTING_AND_QA.md
+      - 12 Data Migration: proposal/12_DATA_MIGRATION.md
+      - 13 Support Model: proposal/13_SUPPORT_MODEL.md
+      - 14 Training: proposal/14_TRAINING.md
+      - 15 Change Management: proposal/15_CHANGE_MANAGEMENT.md
+      - 15B Team and Governance: proposal/15_TEAM_AND_GOVERNANCE.md
+      - 16 Risk Management: proposal/16_RISK_MANAGEMENT.md
+      - 17 Deliverables: proposal/17_DELIVERABLES.md
+      - 18 Assumptions: proposal/18_ASSUMPTIONS.md
+      - 19 Exclusions: proposal/19_EXCLUSIONS.md
+      - 20 Appendix Map: proposal/20_APPENDIX_MAP.md
+      - 21 Project Execution Model: proposal/21_PROJECT_EXECUTION_MODEL.md
+      - 22 Definitive Technical Architecture: proposal/22_DEFINITIVE_TECHNICAL_ARCHITECTURE.md
+      - 23 Quality Security Operation: proposal/23_QUALITY_SECURITY_OPERATION.md
+  - Anexos y soporte:
+      - Master Proposal: proposal/MASTER_TECHNICAL_PROPOSAL.md
+      - Master Outline: proposal/MASTER_TECHNICAL_PROPOSAL_OUTLINE.md
+      - Committee Review Simulation: proposal/COMMITTEE_REVIEW_SIMULATION.md
+      - Win Strategy: proposal/WIN_STRATEGY.md
+      - Company Profile: proposal/COMPANY_PROFILE.md
+      - Corporate Capabilities: proposal/CORPORATE_CAPABILITIES.md
+      - Relevant Experience: proposal/RELEVANT_EXPERIENCE.md
+      - Partners and Certifications: proposal/PARTNERS_AND_CERTIFICATIONS.md
+      - Project Team: proposal/PROJECT_TEAM.md
+      - Missing Justech Information: proposal/MISSING_JUSTECH_INFORMATION.md
+  - Referencias cruzadas:
+      - Matriz de navegacion: references/cross_references.md
+      - Estado de capitulos: references/chapter_status.md

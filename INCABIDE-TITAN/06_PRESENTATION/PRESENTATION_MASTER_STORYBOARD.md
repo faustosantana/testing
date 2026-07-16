@@ -27,7 +27,7 @@ Duracion recomendada: **25 a 30 minutos**, dejando espacio para preguntas.
 
 ## Numero de diapositivas
 
-Numero recomendado: **18 diapositivas**.
+Numero recomendado: **20 diapositivas**.
 
 ## Storyboard ejecutivo
 
@@ -50,7 +50,9 @@ Numero recomendado: **18 diapositivas**.
 | 15 | Etapa II | Mostrar evolucion modular. | Modulos priorizables, mockups previos, UAT, manuales y actas parciales. | Roadmap modular conceptual. | Mockups futuros por modulo. | Ninguna. | PADF/INCABIDE pueden priorizar y contratar progresivamente. | 2 min | ¿Se puede contratar por modulos? |
 | 16 | Operacion, soporte y transferencia | Mostrar sostenibilidad. | La plataforma queda documentada, monitoreada, respaldada y transferida a INCABIDE. | Modelo operativo. | Ninguno. | Ninguna. | No se entrega dependencia; se entrega control. | 2 min | ¿Quien opera despues? |
 | 17 | Riesgos y decisiones pendientes | Ser transparentes. | Hay decisiones pendientes: API, Azure, datos, soporte, subasta, equipo y referencias. | Heatmap riesgos. | Ninguno. | Ninguna. | La madurez esta en declarar y controlar supuestos. | 2 min | ¿Que falta para cerrar alcance? |
-| 18 | Cierre ejecutivo | Reforzar mensaje final. | Cada bien, una historia trazable. Cada decision, una evidencia. | Ninguno. | Ninguno. | Imagen institucional futura. | Cerrar con confianza, sobriedad y control. | 1 min | ¿Por que Justech? |
+| 18 | Equipo y gobernanza | Presentar capacidad de ejecucion. | La propuesta combina direccion, arquitectura, delivery, transformacion, DevOps y QA. | Organigrama. | Ninguno. | Fotos solo si se autorizan. | El equipo reduce riesgos por especialidad y gobierno claro. | 2 min | ¿Quien ejecuta y como se gobierna? |
+| 19 | Beneficios y resultados esperados | Cerrar valor institucional. | Visibilidad, trazabilidad, seguridad, operacion y transferencia. | Matriz beneficio -> evidencia. | Ninguno. | Imagen institucional futura. | Reforzar valor sin exageracion. | 2 min | ¿Que recibe INCABIDE? |
+| 20 | Cierre ejecutivo | Reforzar mensaje final. | Cada bien, una historia trazable. Cada decision, una evidencia. | Ninguno. | Ninguno. | Imagen institucional futura. | Cerrar con confianza, sobriedad y control. | 1 min | ¿Por que Justech? |
 
 ## Narrativa completa
 
@@ -65,6 +67,8 @@ Problema institucional
   -> Etapas de ejecucion
   -> Operacion y transferencia
   -> Riesgos transparentes
+  -> Equipo y gobernanza
+  -> Beneficios
   -> Cierre ejecutivo
 ```
 
@@ -85,6 +89,8 @@ Problema institucional
 | Roadmap modular | 15 | `PROJECT_BACKLOG_RFP_5801_DRC3P.md` |
 | Modelo operativo | 16 | `SOLUTION_BLUEPRINT/11_OPERATION_MODEL.md` |
 | Heatmap riesgos | 17 | `RISK_GAP_AMBIGUITY_REGISTER.md` |
+| Organigrama de equipo | 18 | `TECHNICAL_PROPOSAL/15_TEAM_AND_GOVERNANCE.md` |
+| Matriz beneficio-evidencia | 19 | `TECHNICAL_PROPOSAL/23_QUALITY_SECURITY_OPERATION.md` |
 
 ## Mockups requeridos posteriormente
 
@@ -121,6 +127,8 @@ Problema institucional
 | ¿Que evidencia tiene Justech? | 17, 18; depende de informacion Justech |
 | ¿Como se evita dependencia del proveedor? | 16 |
 | ¿Que decisiones faltan? | 17 |
+| ¿Quien ejecuta el proyecto? | 18 |
+| ¿Que beneficios concretos quedan para INCABIDE? | 19 |
 
 ## Reglas editoriales
 

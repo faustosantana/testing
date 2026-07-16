@@ -145,19 +145,25 @@ Todos los datos son ficticios y deben marcarse como datos de demostracion.
 **Recorrido:** Usuarios -> Roles -> Permisos -> Auditoria de cambio.  
 **Mensaje:** el sistema respeta permisos y deja evidencia de cambios.
 
-## Recorrido de demostracion recomendado
+## Guion de demostracion recomendado
 
-Duracion objetivo: 15 a 20 minutos.
+Duracion objetivo: aproximadamente 15 minutos.
 
-| Minuto | Bloque | Pantallas |
-| --- | --- | --- |
-| 0-2 | Apertura y narrativa | Titulo demo + Dashboard Ejecutivo |
-| 2-5 | Vision ejecutiva | Dashboard Ejecutivo + drill-down |
-| 5-8 | Expediente del bien | Expediente + documentos + mapa |
-| 8-11 | Trazabilidad | Cadena de Custodia + Timeline + Auditoria |
-| 11-14 | Disposicion | Subastas + reportes |
-| 14-17 | Administracion | Usuarios + permisos + configuracion |
-| 17-20 | Cierre | Reporte ejecutivo + beneficios |
+| Minuto | Pantalla | Que explicar | Beneficio a destacar | Pregunta probable | Respuesta sugerida |
+| --- | --- | --- | --- | --- | --- |
+| 0-1 | Apertura / entorno demo | Aclarar que son datos ficticios y que la demo sigue el ciclo de vida de un bien. | Transparencia y control del alcance. | ¿Son datos reales? | No. Son datos ficticios preparados para demostrar flujos. |
+| 1-3 | Dashboard Ejecutivo | Mostrar bienes, estados, provincias, alertas y proximas subastas. | Decision ejecutiva en menos de 30 segundos. | ¿Puede un director llegar al detalle? | Si, cada KPI permite drill-down a evidencia. |
+| 3-4 | Drill-down de alerta | Abrir una alerta critica y navegar a lista filtrada. | Los indicadores no son decorativos; guian accion. | ¿Como se priorizan alertas? | Por estado, criticidad y reglas funcionales configurables. |
+| 4-6 | Expediente de Bien | Mostrar codigo, caso, estado, ubicacion, documentos y resumen. | Expediente unico y trazable. | ¿Todo queda en un solo lugar? | El expediente consolida datos, evidencia, timeline y custodia. |
+| 6-7 | Registro / edicion controlada | Mostrar catalogos, campos obligatorios y validaciones. | Menos errores y mas consistencia. | ¿Se evita captura libre? | Se usan catalogos y validaciones donde la RFP lo requiere. |
+| 7-8 | Centro Documental | Mostrar documentos, tipos, confidencialidad y version. | Evidencia vinculada al activo. | ¿Se auditan descargas? | Las acciones sensibles deben quedar auditadas. |
+| 8-9 | Mapa Geografico | Mostrar provincia/municipio y acceso a expediente. | Supervision territorial. | ¿Que mapas se usaran? | Proveedor/fuente pendiente de validacion con INCABIDE. |
+| 9-10 | Cadena de Custodia | Mostrar movimientos, responsables y evidencia. | Trazabilidad legal-operativa. | ¿Se puede reconstruir un traslado? | Si, con eventos, responsables, fechas y documentos. |
+| 10-11 | Timeline / Auditoria | Filtrar eventos por usuario, fecha y accion. | Auditoria accionable. | ¿Quien hizo que cambio? | El timeline muestra usuario, accion, fecha y recurso. |
+| 11-12 | Subastas / Disposicion | Mostrar lote demo y estado de proceso. | Disposicion gobernada. | ¿PGR esta integrado? | La API base es obligatoria; PGR es opcional y depende de aprobacion externa. |
+| 12-13 | Usuarios y permisos | Mostrar roles y permisos conceptuales. | Seguridad por rol. | ¿Todos pueden editar? | No. Las acciones dependen de rol y permiso. |
+| 13-14 | Reporte Ejecutivo | Mostrar reporte y exportacion controlada. | Operacion convertida en decision. | ¿Se puede exportar todo? | Exportaciones sensibles deben controlarse y auditarse. |
+| 14-15 | Cierre | Resumir trazabilidad, seguridad, visibilidad y control. | Valor institucional. | ¿Que sigue? | Aprobar alcance de demo futura: prototipo, clickable o funcional. |
 
 ## Navegacion demo
 

@@ -6,9 +6,9 @@ Ultima actualizacion: Dia 5 - Oferta Tecnica modular en construccion
 
 | Indicador | Valor |
 | --- | --- |
-| % completado | 83% |
-| Fase actual | Fase 8 — Presentation Master Storyboard |
-| Estado general | Storyboard ejecutivo disenado, pendiente aprobacion antes de PowerPoint |
+| % completado | 88% |
+| Fase actual | Produccion total — Propuesta tecnica |
+| Estado general | Capitulos principales redactados; pendientes CVs, referencias y cierre editorial |
 | Responsable de seguimiento | PM Bid |
 | Requisitos trazables | 428 |
 | Entregables identificados | 58 |
@@ -21,7 +21,7 @@ Ultima actualizacion: Dia 5 - Oferta Tecnica modular en construccion
 | Design Differentiators | 45 |
 | Documentos Solution Story | 21 |
 | Documentos Azure Enterprise | 32 |
-| Documentos Technical Proposal | 31 |
+| Documentos Technical Proposal | 34 |
 | Demo Master Plan | 1 |
 | Presentation Storyboard | 1 |
 
@@ -47,6 +47,10 @@ Ultima actualizacion: Dia 5 - Oferta Tecnica modular en construccion
 | Informacion faltante Justech | TECHNICAL_PROPOSAL | Bid Manager | Identificada | Dia 5 |
 | Informacion corporativa Justech confirmada | TECHNICAL_PROPOSAL | Bid Manager | Integrada parcialmente | Dia 8 |
 | Team and Governance | TECHNICAL_PROPOSAL | Bid Manager / PMO | Completado con informacion validada | Dia 8 |
+| Master Technical Proposal | TECHNICAL_PROPOSAL | Bid Manager / CTO | Compilado base | Dia 9 |
+| Project Execution Model | TECHNICAL_PROPOSAL | Project Director | Completado | Dia 9 |
+| Definitive Technical Architecture | TECHNICAL_PROPOSAL | Principal Architect | Completado | Dia 9 |
+| Quality Security Operation | TECHNICAL_PROPOSAL | QA Lead / Security | Completado | Dia 9 |
 | Oferta tecnica final compilada | 03_PROPOSAL | Lider propuesta | Pendiente revision | Dia 5 |
 | Oferta economica | 07_COSTS | Lider comercial | Pendiente | Dia 3 |
 | Paquete legal | 10_LEGAL | Responsable legal | Pendiente | Dia 4 |
@@ -103,6 +107,7 @@ Ultima actualizacion: Dia 5 - Oferta Tecnica modular en construccion
 | DEC-015 | Disenar presentacion como narrativa ejecutiva, sin crear PowerPoint ni imagenes | Dia 8 | Bid Manager / UX Lead | 06_PRESENTATION/PRESENTATION_MASTER_STORYBOARD.md |
 | DEC-016 | Integrar solo informacion corporativa Justech confirmada por Fausto | Dia 8 | Bid Manager | TECHNICAL_PROPOSAL/COMPANY_PROFILE.md |
 | DEC-017 | Construir Team and Governance con informacion validada por Direccion, pendiente de enriquecer con CV oficiales | Dia 8 | Bid Manager / PMO | TECHNICAL_PROPOSAL/15_TEAM_AND_GOVERNANCE.md |
+| DEC-018 | Integrar fases 5-9 como contenido de propuesta final, no como frameworks independientes | Dia 9 | Bid Manager / CTO / QA Lead | TECHNICAL_PROPOSAL/MASTER_TECHNICAL_PROPOSAL.md |
 
 ## Bloqueos
 
