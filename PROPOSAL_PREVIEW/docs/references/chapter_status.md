@@ -1,0 +1,26 @@
+# Estado de capitulos
+
+- **01 COVER:** Listo con datos formales pendientes
+- **02 EXECUTIVE SUMMARY:** Listo
+- **03 UNDERSTANDING OF THE PROJECT:** Listo
+- **04 CURRENT CHALLENGES:** Listo
+- **05 PROPOSED SOLUTION:** Listo
+- **06 IMPLEMENTATION APPROACH:** Listo
+- **07 TECHNICAL ARCHITECTURE SUMMARY:** Listo
+- **08 AZURE STRATEGY:** Listo
+- **09 SECURITY AND COMPLIANCE:** Listo
+- **10 DEVSECOPS:** Listo
+- **11 TESTING AND QA:** Listo
+- **12 DATA MIGRATION:** Listo
+- **13 SUPPORT MODEL:** Listo
+- **14 TRAINING:** Listo
+- **15 CHANGE MANAGEMENT:** Listo
+- **15 TEAM AND GOVERNANCE:** Listo; CVs oficiales pendientes
+- **16 RISK MANAGEMENT:** Listo
+- **17 DELIVERABLES:** Listo
+- **18 ASSUMPTIONS:** Listo; decisiones PADF/INCABIDE pendientes
+- **19 EXCLUSIONS:** Pendiente revision final
+- **20 APPENDIX MAP:** Pendiente revision final
+- **21 PROJECT EXECUTION MODEL:** Listo
+- **22 DEFINITIVE TECHNICAL ARCHITECTURE:** Listo
+- **23 QUALITY SECURITY OPERATION:** Listo

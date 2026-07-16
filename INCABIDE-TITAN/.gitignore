@@ -1,0 +1,33 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*.temp
+~$*
+
+# Logs
+*.log
+
+# Archives and generated packages
+*.zip
+*.tar
+*.tar.gz
+
+# Local exports
+exports/
+dist/
+build/
+
+# Sensitive local files
+.env
+.env.*
+secrets/
+credentials/
