@@ -74,7 +74,7 @@ Gregori Carmona
 | --- | --- |
 | Rol | Digital Transformation Lead |
 | Responsabilidad principal | Transformacion digital, gobierno funcional, gestion de procesos, optimizacion operativa, coordinacion negocio-tecnologia, gestion agil e innovacion. |
-| Fortalezas confirmadas | Transformacion digital; PMO; Agile; Scrum; Power BI; SQL; Python; AWS; Azure AI; gestion empresarial. |
+| Fortalezas confirmadas | Transformacion Digital; PMO; Agile; Scrum; Power BI; SQL; Python; AWS; Azure AI; gestion empresarial. |
 | Enfoque en INCABIDE | Asegurar que la solucion responda a procesos institucionales, adopcion funcional y mejora operativa. |
 | Informacion pendiente | CV oficial, certificaciones si existen, experiencia documentada y dedicacion estimada. |
 
@@ -150,7 +150,38 @@ Gregori Carmona
 | Redes empresariales | Fuerte | Apoyo | No indicado | No indicado | Pendiente CV | No indicado |
 | Odoo | No indicado | No indicado | No indicado | No indicado | No indicado | Fuerte |
 
-## 15.7 Cobertura de requisitos de la RFP por miembro del equipo
+## 15.7 Matriz de cobertura por especialidad
+
+| Especialidad critica para la RFP | Cobertura principal | Cobertura de apoyo | Observacion |
+| --- | --- | --- | --- |
+| Direccion integral del proyecto | Gregori Carmona | Jose Duran, Luis Daniel Hernandez | Cubre gobierno, riesgos, calidad, stakeholders y entregables. |
+| Gestion formal / PMP | Gregori Carmona | Equipo de direccion | PMP vigente confirmado por Direccion del Proyecto; evidencia documental pendiente. |
+| Arquitectura Azure | Francisco Tavera | Jesus Alvarez, Grismaldy Ortiz | Cubre diseno cloud, infraestructura, HA, DR y gobierno tecnologico. |
+| Infraestructura y redes | Francisco Tavera | Gregori Carmona, Jesus Alvarez | Cubre infraestructura cloud, redes empresariales y ambientes. |
+| Base de datos / PostgreSQL | Francisco Tavera | Grismaldy Ortiz | Cobertura confirmada para PostgreSQL desde fortalezas de Francisco. |
+| APIs e integraciones | Francisco Tavera | Grismaldy Ortiz, Jesus Alvarez | Cubre diseno e integracion tecnica; detalles especificos se ampliaran con CVs. |
+| Liderazgo tecnico de desarrollo | Grismaldy Ortiz | Francisco Tavera, Jesus Alvarez | Cubre coordinacion tecnica entre arquitectura y desarrollo. |
+| Automatizacion / IA / RPA | Grismaldy Ortiz | Jose Duran, Jesus Alvarez | Cubre automatizacion, IA, RPA y mejora de entrega tecnica. |
+| Transformacion digital y procesos | Jose Duran | Grismaldy Ortiz, Gregori Carmona | Cubre gobierno funcional, procesos, gestion agil e innovacion. |
+| DevOps / CI-CD / contenedores | Jesus Alvarez | Francisco Tavera, Grismaldy Ortiz | Cubre CI/CD, Docker, contenedores y ambientes DEV/TEST/PROD. |
+| QA / UAT / trazabilidad | Luis Daniel Hernandez | Gregori Carmona, Grismaldy Ortiz | Cubre estrategia de pruebas, defectos, trazabilidad y aceptacion de usuario. |
+| Ciberseguridad | Gregori Carmona, Francisco Tavera | Jesus Alvarez, Luis Daniel Hernandez | Cobertura multidisciplinaria; detalles documentales pendientes de CVs. |
+| Adopcion y mejora operativa | Jose Duran | Luis Daniel Hernandez, Grismaldy Ortiz | Cubre transformacion, procesos, mejora continua y validacion funcional. |
+
+## 15.8 Matriz de disponibilidad
+
+La disponibilidad detallada por porcentaje u horas debe confirmarse con la Direccion del Proyecto antes de la entrega final. Para no inventar dedicaciones, esta matriz expresa la disponibilidad funcional esperada por fase y marca como pendiente la dedicacion cuantitativa.
+
+| Rol | Fase de mayor participacion | Disponibilidad funcional esperada | Dedicacion cuantitativa |
+| --- | --- | --- | --- |
+| Gregori Carmona | Todo el proyecto | Direccion, gobierno, seguimiento ejecutivo y coordinacion con PADF/INCABIDE. | PENDIENTE DE VALIDACION |
+| Francisco Tavera | Arquitectura, Azure, seguridad, datos, integraciones | Participacion intensiva en diseno y validacion de arquitectura; apoyo en decisiones tecnicas criticas. | PENDIENTE DE VALIDACION |
+| Grismaldy Ortiz | Entrega tecnica, desarrollo, automatizacion | Participacion intensiva durante coordinacion tecnica, desarrollo y supervision de entregables. | PENDIENTE DE VALIDACION |
+| Jose Duran | Descubrimiento funcional, procesos, adopcion | Participacion relevante en gobierno funcional, procesos, transformacion y coordinacion negocio-tecnologia. | PENDIENTE DE VALIDACION |
+| Jesus Alvarez | DevOps, ambientes, despliegue, observabilidad | Participacion intensiva durante configuracion de ambientes, automatizacion, despliegues y monitoreo. | PENDIENTE DE VALIDACION |
+| Luis Daniel Hernandez | QA, UAT, aceptacion, cierre | Participacion intensiva en estrategia de pruebas, validacion, defectos, UAT y criterios de aceptacion. | PENDIENTE DE VALIDACION |
+
+## 15.9 Cobertura de requisitos de la RFP por miembro del equipo
 
 | Requisito RFP / necesidad | Miembro(s) que cubren | Estado |
 | --- | --- | --- |
@@ -170,7 +201,7 @@ Gregori Carmona
 | DevOps/Seguridad con VPN y firewalls | Jesus Alvarez / Francisco Tavera / Gregori Carmona | PENDIENTE DE VALIDACION documental especifica. |
 | Hojas de vida del equipo clave | Todos | PENDIENTE DE CV OFICIAL. |
 
-## 15.8 Estrategia de gobernanza del proyecto
+## 15.10 Estrategia de gobernanza del proyecto
 
 La gobernanza propuesta se organiza en cuatro niveles:
 
@@ -190,7 +221,34 @@ Grismaldy Ortiz coordina entrega tecnica, desarrollo, automatizacion y calidad t
 
 Jesus Alvarez lidera DevOps, ambientes, automatizacion de despliegues, observabilidad y contenedores. Luis Daniel Hernandez lidera QA, pruebas, defectos, matriz de trazabilidad, validacion funcional y aceptacion de usuario.
 
-## 15.9 Mecanismos de control
+## 15.11 Modelo de Gobierno del Proyecto
+
+El modelo de gobierno organiza la toma de decisiones, seguimiento y control de entregables en tres niveles operativos:
+
+| Nivel de gobierno | Participantes | Funcion | Salida esperada |
+| --- | --- | --- | --- |
+| Gobierno ejecutivo | Gregori Carmona, representantes designados de PADF/INCABIDE | Seguimiento de avance, riesgos, decisiones ejecutivas y escalamiento. | Minutas ejecutivas, decisiones y prioridades. |
+| Gobierno tecnico | Francisco Tavera, Grismaldy Ortiz, Jesus Alvarez, Luis Daniel Hernandez | Arquitectura, integraciones, DevOps, seguridad, QA y resolucion de bloqueos tecnicos. | Decisiones tecnicas, acciones correctivas, evidencias. |
+| Gobierno funcional | Jose Duran, Grismaldy Ortiz, Luis Daniel Hernandez, usuarios clave designados | Procesos, validaciones funcionales, UAT, adopcion y criterios de aceptacion. | Validaciones, feedback, actas UAT, ajustes priorizados. |
+
+El gobierno debe operar con registro de decisiones, matriz de riesgos, control de cambios y trazabilidad requisito-entregable-evidencia. Ningun cambio critico de alcance, arquitectura, seguridad o aceptacion debe ejecutarse sin registro y aprobacion correspondiente.
+
+## 15.12 Modelo de Comunicacion
+
+La comunicacion del proyecto debe ser clara, trazable y orientada a decisiones. Se propone el siguiente modelo:
+
+| Tipo de comunicacion | Audiencia | Responsable principal | Frecuencia sugerida | Proposito |
+| --- | --- | --- | --- | --- |
+| Seguimiento ejecutivo | PADF/INCABIDE y Direccion del Proyecto | Gregori Carmona | PENDIENTE DE VALIDACION | Revisar avance, riesgos, decisiones y prioridades. |
+| Seguimiento tecnico | Arquitectura, desarrollo, DevOps, QA | Francisco Tavera / Grismaldy Ortiz | PENDIENTE DE VALIDACION | Resolver temas tecnicos, dependencias y entregables. |
+| Seguimiento funcional | Usuarios clave, procesos, UAT | Jose Duran / Luis Daniel Hernandez | PENDIENTE DE VALIDACION | Revisar flujos, validaciones, defectos y aceptacion. |
+| Reporte de riesgos | Direccion y responsables de frente | Gregori Carmona | PENDIENTE DE VALIDACION | Mantener visibilidad de riesgos y mitigaciones. |
+| Comunicacion de incidentes | Equipo tecnico y stakeholders afectados | Jesus Alvarez / Luis Daniel Hernandez | Segun severidad | Informar impacto, accion, responsable y cierre. |
+| Actas y decisiones | Todos los frentes segun tema | Responsable de cada reunion | Por evento | Mantener evidencia y trazabilidad. |
+
+Los canales, frecuencia exacta y responsables finales deben acordarse con PADF/INCABIDE al inicio del proyecto.
+
+## 15.13 Mecanismos de control
 
 - Comite de seguimiento interno.
 - Registro de riesgos.
@@ -201,7 +259,22 @@ Jesus Alvarez lidera DevOps, ambientes, automatizacion de despliegues, observabi
 - Revalidacion de flujo, modulo y regresiones despues de correcciones.
 - Reporte de estado de entregables.
 
-## 15.10 Informacion pendiente para enriquecer cuando lleguen los CV oficiales
+## 15.14 ¿Por que este equipo?
+
+La combinacion de perfiles propuesta reduce riesgos porque cubre los frentes criticos de la RFP con responsabilidades diferenciadas:
+
+- **Riesgo de gobierno y coordinacion:** Gregori Carmona concentra direccion integral, planificacion, riesgos, calidad, entregables y relacion con PADF/INCABIDE.
+- **Riesgo de arquitectura cloud:** Francisco Tavera cubre arquitectura Azure, infraestructura, alta disponibilidad, DR, bases de datos, integraciones y gobierno tecnologico.
+- **Riesgo de ejecucion tecnica:** Grismaldy Ortiz articula liderazgo tecnico, automatizacion, calidad tecnica y coordinacion entre arquitectura y desarrollo.
+- **Riesgo de adopcion funcional:** Jose Duran conecta transformacion digital, procesos, gobierno funcional, gestion agil e innovacion.
+- **Riesgo de ambientes y despliegues:** Jesus Alvarez cubre DevOps, CI/CD, Docker, contenedores, monitoreo, observabilidad y ambientes.
+- **Riesgo de aceptacion y calidad:** Luis Daniel Hernandez cubre estrategia de pruebas, QA funcional y tecnico, automatizacion, defectos, trazabilidad y UAT.
+
+Esta distribucion evita depender de un solo perfil para decisiones criticas. La direccion del proyecto, arquitectura, entrega tecnica, transformacion funcional, DevOps y QA quedan separados pero coordinados, lo que fortalece control, trazabilidad y capacidad de respuesta ante riesgos.
+
+La propuesta tambien reconoce sus pendientes: los CV oficiales deben incorporarse para respaldar experiencia, fechas, formacion, certificaciones y dedicacion. Esa informacion enriquecera las fichas sin cambiar el modelo de gobierno ni las responsabilidades aqui definidas.
+
+## 15.15 Informacion pendiente para enriquecer cuando lleguen los CV oficiales
 
 - CV completo de cada integrante.
 - Fechas exactas de experiencia.
